@@ -1,0 +1,322 @@
+{
+  "datasets_enumerated": {
+    "value": 114,
+    "source": "dataset-disposition.json",
+    "transformation": "count keys"
+  },
+  "datasets_used": {
+    "value": 75,
+    "source": "dataset-disposition.json:*.used",
+    "transformation": "sum true"
+  },
+  "datasets_excluded": {
+    "value": 39,
+    "source": "dataset-disposition.json:*.used",
+    "transformation": "sum false"
+  },
+  "configurations": {
+    "value": 152,
+    "source": "corpus.json",
+    "transformation": "count configurations"
+  },
+  "binary_configurations": {
+    "value": 114,
+    "source": "corpus.json:*.binary",
+    "transformation": "count nonempty"
+  },
+  "below_page_minimum": {
+    "value": 25,
+    "source": "corpus.json:*.k",
+    "transformation": "count k < 5"
+  },
+  "checks": {
+    "value": 2113,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "passed": {
+    "value": 2107,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "failures": {
+    "value": 6,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "numeric_failures": {
+    "value": 2,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "failed_refusals": {
+    "value": 4,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "unmatched_R_refusals": {
+    "value": 3,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "unavailable_references": {
+    "value": 1,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "validated_methods": {
+    "value": 5,
+    "source": "reference.json + app-merged-3dcc679.json",
+    "transformation": "recomputed non-selection comparison"
+  },
+  "egger_lm_configurations": {
+    "value": 151,
+    "source": "reference.json + app-merged-3dcc679.json:egger_lm",
+    "transformation": "count numerically comparable configurations"
+  },
+  "egger_lm_passed": {
+    "value": 151,
+    "source": "reference.json + app-merged-3dcc679.json:egger_lm",
+    "transformation": "count configurations passing every quantity"
+  },
+  "egger_lm_max": {
+    "value": 2.5844409945463553e-11,
+    "source": "reference.json + app-merged-3dcc679.json:egger_lm",
+    "transformation": "maximum comparison difference"
+  },
+  "begg_configurations": {
+    "value": 152,
+    "source": "reference.json + app-merged-3dcc679.json:begg",
+    "transformation": "count numerically comparable configurations"
+  },
+  "begg_passed": {
+    "value": 151,
+    "source": "reference.json + app-merged-3dcc679.json:begg",
+    "transformation": "count configurations passing every quantity"
+  },
+  "begg_max": {
+    "value": 0.00016333806733537237,
+    "source": "reference.json + app-merged-3dcc679.json:begg",
+    "transformation": "maximum comparison difference"
+  },
+  "trimfill_configurations": {
+    "value": 150,
+    "source": "reference.json + app-merged-3dcc679.json:trimfill",
+    "transformation": "count numerically comparable configurations"
+  },
+  "trimfill_passed": {
+    "value": 150,
+    "source": "reference.json + app-merged-3dcc679.json:trimfill",
+    "transformation": "count configurations passing every quantity"
+  },
+  "trimfill_max": {
+    "value": 2.7258445855582714e-15,
+    "source": "reference.json + app-merged-3dcc679.json:trimfill",
+    "transformation": "maximum comparison difference"
+  },
+  "peters_configurations": {
+    "value": 112,
+    "source": "reference.json + app-merged-3dcc679.json:peters",
+    "transformation": "count numerically comparable configurations"
+  },
+  "peters_passed": {
+    "value": 112,
+    "source": "reference.json + app-merged-3dcc679.json:peters",
+    "transformation": "count configurations passing every quantity"
+  },
+  "peters_max": {
+    "value": 1.0790590643239284e-11,
+    "source": "reference.json + app-merged-3dcc679.json:peters",
+    "transformation": "maximum comparison difference"
+  },
+  "harbord_configurations": {
+    "value": 112,
+    "source": "reference.json + app-merged-3dcc679.json:harbord",
+    "transformation": "count numerically comparable configurations"
+  },
+  "harbord_passed": {
+    "value": 112,
+    "source": "reference.json + app-merged-3dcc679.json:harbord",
+    "transformation": "count configurations passing every quantity"
+  },
+  "harbord_max": {
+    "value": 8.599190803870727e-12,
+    "source": "reference.json + app-merged-3dcc679.json:harbord",
+    "transformation": "maximum comparison difference"
+  },
+  "selection_mu_before_passed": {
+    "value": 30,
+    "source": "app-original2.json + reference.json:selection.mu",
+    "transformation": "recomputed comparison; experimental only"
+  },
+  "selection_mu_before_checks": {
+    "value": 137,
+    "source": "app-original2.json + reference.json:selection.mu",
+    "transformation": "recomputed comparison; experimental only"
+  },
+  "selection_mu_after_passed": {
+    "value": 35,
+    "source": "app-merged-3dcc679.json + reference.json:selection.mu",
+    "transformation": "recomputed comparison; experimental only"
+  },
+  "selection_mu_after_checks": {
+    "value": 137,
+    "source": "app-merged-3dcc679.json + reference.json:selection.mu",
+    "transformation": "recomputed comparison; experimental only"
+  },
+  "trimfill_prefix_max": {
+    "value": 5.7498737888237936e-05,
+    "source": "app-original2.json + reference.json:trimfill",
+    "transformation": "maximum comparison difference"
+  },
+  "hackshaw_k": {
+    "value": 37,
+    "source": "corpus.json:dat.hackshaw1998.k",
+    "transformation": "identity"
+  },
+  "hackshaw_egger_lm_statistic": {
+    "value": 2.3824144166025643,
+    "source": "reference.json:datasets.dat.hackshaw1998.egger_lm.value.statistic",
+    "transformation": "identity"
+  },
+  "hackshaw_egger_lm_p": {
+    "value": 0.022764199703406707,
+    "source": "reference.json:datasets.dat.hackshaw1998.egger_lm.value.p",
+    "transformation": "identity"
+  },
+  "hackshaw_begg_tau": {
+    "value": 0.14414414414414414,
+    "source": "reference.json:datasets.dat.hackshaw1998.begg.value.tau",
+    "transformation": "identity"
+  },
+  "hackshaw_begg_p": {
+    "value": 0.21568812466960985,
+    "source": "reference.json:datasets.dat.hackshaw1998.begg.value.p",
+    "transformation": "identity"
+  },
+  "hackshaw_trimfill_k0": {
+    "value": 7,
+    "source": "reference.json:datasets.dat.hackshaw1998.trimfill.value.k0",
+    "transformation": "identity"
+  },
+  "hackshaw_trimfill_side": {
+    "value": "left",
+    "source": "reference.json:datasets.dat.hackshaw1998.trimfill.value.side",
+    "transformation": "identity"
+  },
+  "hackshaw_adjusted_OR": {
+    "value": 1.1906164188652941,
+    "source": "reference.json:datasets.dat.hackshaw1998.trimfill.value",
+    "transformation": "exp(est), or exp(est ± qnorm(.975)*se)"
+  },
+  "hackshaw_adjusted_lower": {
+    "value": 1.082796169625392,
+    "source": "reference.json:datasets.dat.hackshaw1998.trimfill.value",
+    "transformation": "exp(est), or exp(est ± qnorm(.975)*se)"
+  },
+  "hackshaw_adjusted_upper": {
+    "value": 1.3091729511400507,
+    "source": "reference.json:datasets.dat.hackshaw1998.trimfill.value",
+    "transformation": "exp(est), or exp(est ± qnorm(.975)*se)"
+  },
+  "hackshaw_max": {
+    "value": 1.1781513264974564e-12,
+    "source": "reference.json + app-merged-3dcc679.json:dat.hackshaw1998",
+    "transformation": "max over all compared validated quantities"
+  },
+  "hackshaw_unadjusted_OR": {
+    "value": 1.2446940718606767,
+    "source": "hackshaw-reml.json:OR",
+    "transformation": "separate R REML run; exponentiated estimate/CI"
+  },
+  "hackshaw_unadjusted_lower": {
+    "value": 1.1298397359082135,
+    "source": "hackshaw-reml.json:lower",
+    "transformation": "separate R REML run; exponentiated estimate/CI"
+  },
+  "hackshaw_unadjusted_upper": {
+    "value": 1.3712239738848866,
+    "source": "hackshaw-reml.json:upper",
+    "transformation": "separate R REML run; exponentiated estimate/CI"
+  },
+  "hackshaw_unadjusted_OR_display": {
+    "value": 1.24,
+    "source": "hackshaw-reml.json:OR",
+    "transformation": "round to two decimals for manuscript"
+  },
+  "begg_roundtrip_max": {
+    "value": 1.3766765505351941e-14,
+    "source": "targeted-diagnostics.json:dat.mccurdy2020.begg_roundtrip + app-merged-3dcc679.json",
+    "transformation": "maximum absolute discrepancy"
+  },
+  "version_R": {
+    "value": "R version 4.6.0 (2026-04-24 ucrt)",
+    "source": "reference.json:versions.R",
+    "transformation": "identity"
+  },
+  "version_metafor": {
+    "value": "5.2.1",
+    "source": "reference.json:versions.metafor",
+    "transformation": "identity"
+  },
+  "version_metadat": {
+    "value": "1.6.0",
+    "source": "reference.json:versions.metadat",
+    "transformation": "identity"
+  },
+  "version_meta": {
+    "value": "8.5.0",
+    "source": "reference.json:versions.meta",
+    "transformation": "identity"
+  },
+  "allmeta_commit": {
+    "value": "3dcc679",
+    "source": "protocol.json:allmeta_commit",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "closed_form_tolerance": {
+    "value": 1e-09,
+    "source": "protocol.json:closed_form_tolerance",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "iterative_tolerance": {
+    "value": 1e-06,
+    "source": "protocol.json:iterative_tolerance",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "continuity_correction": {
+    "value": 0.5,
+    "source": "protocol.json:continuity_correction",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "corpus_minimum_k": {
+    "value": 3,
+    "source": "protocol.json:corpus_minimum_k",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "page_minimum_k": {
+    "value": 5,
+    "source": "protocol.json:page_minimum_k",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "reference_timeout_seconds": {
+    "value": 120,
+    "source": "protocol.json:reference_timeout_seconds",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "CI_percent": {
+    "value": 95,
+    "source": "protocol.json:CI_percent",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "selection_step": {
+    "value": 0.025,
+    "source": "protocol.json:selection_step",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  },
+  "trimfill_estimator": {
+    "value": "L0",
+    "source": "protocol.json:trimfill_estimator",
+    "transformation": "static protocol or source metadata; see README disclosure"
+  }
+}

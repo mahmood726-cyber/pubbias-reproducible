@@ -1,0 +1,12 @@
+{
+  "allmeta_commit": "3dcc679",
+  "closed_form_tolerance": 1e-09,
+  "iterative_tolerance": 1e-06,
+  "continuity_correction": 0.5,
+  "corpus_minimum_k": 3,
+  "page_minimum_k": 5,
+  "reference_timeout_seconds": 120,
+  "CI_percent": 95,
+  "selection_step": 0.025,
+  "trimfill_estimator": "L0"
+}

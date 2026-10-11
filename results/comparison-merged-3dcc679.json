@@ -1,0 +1,5588 @@
+{
+  "app_file": "app-merged-3dcc679.json",
+  "reference_configurations": 152,
+  "app_configurations": 152,
+  "quantities": {
+    "egger_lm.statistic": {
+      "checks": 151,
+      "passing": 151,
+      "max_difference": 7.788970674707525e-14,
+      "tolerance": 1e-09
+    },
+    "egger_lm.p": {
+      "checks": 151,
+      "passing": 151,
+      "max_difference": 2.5844409945463553e-11,
+      "tolerance": 1e-09
+    },
+    "egger_lm.b0": {
+      "checks": 151,
+      "passing": 151,
+      "max_difference": 4.072473933436057e-14,
+      "tolerance": 1e-09
+    },
+    "egger_lm.limit": {
+      "checks": 151,
+      "passing": 151,
+      "max_difference": 8.721640048399497e-15,
+      "tolerance": 1e-09
+    },
+    "begg.tau": {
+      "checks": 152,
+      "passing": 151,
+      "max_difference": 3.6453158183055723e-06,
+      "tolerance": 1e-09
+    },
+    "begg.p": {
+      "checks": 152,
+      "passing": 151,
+      "max_difference": 0.00016333806733537237,
+      "tolerance": 1e-09
+    },
+    "trimfill.k0": {
+      "checks": 150,
+      "passing": 150,
+      "max_difference": 0,
+      "tolerance": 1e-09
+    },
+    "trimfill.side": {
+      "checks": 150,
+      "passing": 150,
+      "max_difference": 0,
+      "tolerance": 1e-09
+    },
+    "trimfill.est": {
+      "checks": 150,
+      "passing": 150,
+      "max_difference": 2.7258445855582714e-15,
+      "tolerance": 1e-06
+    },
+    "trimfill.se": {
+      "checks": 150,
+      "passing": 150,
+      "max_difference": 6.26330991985093e-16,
+      "tolerance": 1e-06
+    },
+    "trimfill.tau2": {
+      "checks": 150,
+      "passing": 150,
+      "max_difference": 2.0434614306219076e-15,
+      "tolerance": 1e-06
+    },
+    "selection.mu": {
+      "checks": 137,
+      "passing": 35,
+      "max_difference": 0.1189406447128233,
+      "tolerance": 1e-06
+    },
+    "selection.se": {
+      "checks": 137,
+      "passing": 40,
+      "max_difference": 0.29519636786145337,
+      "tolerance": 1e-06
+    },
+    "selection.tau2": {
+      "checks": 137,
+      "passing": 53,
+      "max_difference": 0.026180530820619545,
+      "tolerance": 1e-06
+    },
+    "selection.delta": {
+      "checks": 137,
+      "passing": 19,
+      "max_difference": 99.1999849619735,
+      "tolerance": 1e-06
+    },
+    "selection.LRT": {
+      "checks": 137,
+      "passing": 33,
+      "max_difference": 0.4903605651754945,
+      "tolerance": 1e-06
+    },
+    "selection.LRTp": {
+      "checks": 137,
+      "passing": 40,
+      "max_difference": 0.0951413099187079,
+      "tolerance": 1e-06
+    },
+    "peters.statistic": {
+      "checks": 112,
+      "passing": 112,
+      "max_difference": 6.439293542825908e-15,
+      "tolerance": 1e-09
+    },
+    "peters.p": {
+      "checks": 112,
+      "passing": 112,
+      "max_difference": 1.0790590643239284e-11,
+      "tolerance": 1e-09
+    },
+    "harbord.statistic": {
+      "checks": 112,
+      "passing": 112,
+      "max_difference": 9.055817073286731e-15,
+      "tolerance": 1e-09
+    },
+    "harbord.p": {
+      "checks": 112,
+      "passing": 112,
+      "max_difference": 8.599190803870727e-12,
+      "tolerance": 1e-09
+    },
+    "selection.refusal": {
+      "checks": 15,
+      "passing": 8,
+      "max_difference": 0,
+      "tolerance": 0
+    },
+    "egger_lm.refusal": {
+      "checks": 1,
+      "passing": 0,
+      "max_difference": 0,
+      "tolerance": 0
+    },
+    "trimfill.refusal": {
+      "checks": 2,
+      "passing": 1,
+      "max_difference": 0,
+      "tolerance": 0
+    },
+    "peters.refusal": {
+      "checks": 2,
+      "passing": 1,
+      "max_difference": 0,
+      "tolerance": 0
+    },
+    "harbord.refusal": {
+      "checks": 2,
+      "passing": 1,
+      "max_difference": 0,
+      "tolerance": 0
+    }
+  },
+  "failures": [
+    {
+      "dataset": "dat.anand1999/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.37526656424563876,
+      "app": 0.3752653921825459,
+      "difference": 1.172063092858e-06
+    },
+    {
+      "dataset": "dat.anand1999/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.6122741037789297,
+      "app": 0.6122769095894398,
+      "difference": 2.8058105101536057e-06
+    },
+    {
+      "dataset": "dat.anand1999/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.43393285249448865,
+      "app": 0.4339317992213384,
+      "difference": 1.0532731502532755e-06
+    },
+    {
+      "dataset": "dat.anker2025/total.logrr",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": -0.18608682371268512,
+        "se": 0.06800839117332788,
+        "tau2": 0.003079015450361026,
+        "delta": [
+          1,
+          99.99999970843515
+        ],
+        "LRT": 0.03639448046173843,
+        "LRTdf": 1,
+        "LRTp": 0.8487031495299877,
+        "unadjusted": {
+          "mu": -0.18650935720136125,
+          "tau2": 0.003037688574341411
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.anker2025/female.logrr",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 95.60487717274228,
+      "app": 99.99999999594975,
+      "difference": 0.045971742793688326
+    },
+    {
+      "dataset": "dat.anker2025/female.logrr",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.3051208088422188,
+      "app": 0.3053312468267093,
+      "difference": 0.0002104379844904969
+    },
+    {
+      "dataset": "dat.anker2025/female.logrr",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5806898008622275,
+      "app": 0.5805593507566023,
+      "difference": 0.00013045010562529047
+    },
+    {
+      "dataset": "dat.anker2025/male.logrr",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.2330558245070831,
+      "app": -0.23297591342101828,
+      "difference": 7.991108606481001e-05
+    },
+    {
+      "dataset": "dat.anker2025/male.logrr",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.08255169742301818,
+      "app": 0.08249469454315192,
+      "difference": 5.700287986626362e-05
+    },
+    {
+      "dataset": "dat.anker2025/male.logrr",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.0015665116631474066,
+      "app": 0.0015496523094913782,
+      "difference": 1.6859353656028435e-05
+    },
+    {
+      "dataset": "dat.anker2025/male.logrr",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 20.6411235586827,
+      "app": 99.99999977066933,
+      "difference": 3.844697503329671
+    },
+    {
+      "dataset": "dat.anker2025/male.logrr",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.03191843077591727,
+      "app": 0.033217174061032084,
+      "difference": 0.0012987432851148117
+    },
+    {
+      "dataset": "dat.anker2025/male.logrr",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.8582067994656015,
+      "app": 0.8553819896910577,
+      "difference": 0.0028248097745438017
+    },
+    {
+      "dataset": "dat.anker2025/sex.logrrr",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.14030809649248288,
+      "app": 0.1403062620347515,
+      "difference": 1.834457731386685e-06
+    },
+    {
+      "dataset": "dat.anker2025/sex.logrrr",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.4925252455536695,
+      "app": 0.49252229995542723,
+      "difference": 2.945598242265479e-06
+    },
+    {
+      "dataset": "dat.anker2025/sex.logrrr",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.25237479761910575,
+      "app": 0.25240667378333514,
+      "difference": 3.18761642293941e-05
+    },
+    {
+      "dataset": "dat.anker2025/sex.logrrr",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6154078512096556,
+      "app": 0.6153855394684056,
+      "difference": 2.2311741250002903e-05
+    },
+    {
+      "dataset": "dat.axfors2021/OR:hcq_arm_event:control_arm_event",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.1473927567426699,
+      "app": 0.14746229973845784,
+      "difference": 6.95429957879301e-05
+    },
+    {
+      "dataset": "dat.axfors2021/OR:hcq_arm_event:control_arm_event",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.09760098623790979,
+      "app": 0.09766087943166486,
+      "difference": 5.989319375507285e-05
+    },
+    {
+      "dataset": "dat.axfors2021/OR:hcq_arm_event:control_arm_event",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 97.60103294945317,
+      "app": 99.99999999830926,
+      "difference": 0.02457932028340827
+    },
+    {
+      "dataset": "dat.axfors2021/OR:hcq_arm_event:control_arm_event",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.894164122234244,
+      "app": 2.8954347638055964,
+      "difference": 0.0004390357691157674
+    },
+    {
+      "dataset": "dat.axfors2021/OR:hcq_arm_event:control_arm_event",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.08890087630507282,
+      "app": 0.0888308072617191,
+      "difference": 7.006904335371544e-05
+    },
+    {
+      "dataset": "dat.bakdash2021/es.z",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.8260984934210853,
+      "app": 2.8260951252385382,
+      "difference": 1.1918135744146875e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Fluticasone+Salmeterol",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.1666768525177448,
+      "app": 0.16682274356090693,
+      "difference": 0.00014589104316212187
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Fluticasone+Salmeterol",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.09302280109105235,
+      "app": 0.09310982031677621,
+      "difference": 8.701922572386389e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Fluticasone+Salmeterol",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 96.89431775860105,
+      "app": 99.999999999823,
+      "difference": 0.03205226387949125
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Fluticasone+Salmeterol",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.6929865270465392,
+      "app": 1.694409193652021,
+      "difference": 0.0008403295494404303
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Fluticasone+Salmeterol",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.19320774661976764,
+      "app": 0.19302075874491342,
+      "difference": 0.00018698787485421642
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.11092012884666629,
+      "app": -0.11093064457930181,
+      "difference": 1.05157326355243e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Placebo",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.05680388458929885,
+      "app": 0.05678015318568388,
+      "difference": 2.3731403614973834e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Placebo",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 7.582599606571128e-06,
+      "app": 1.498835376273706e-29,
+      "difference": 7.582599606571128e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 64.5874407441765,
+      "app": 99.99999999883454,
+      "difference": 0.548288627736825
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.13649785910505674,
+      "app": 0.1382035963766075,
+      "difference": 0.0017057372715507668
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Placebo",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.7117877395208452,
+      "app": 0.7100734519000853,
+      "difference": 0.001714287620759869
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Salmeterol",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.3131516058243016,
+      "app": 0.31328074942798584,
+      "difference": 0.00012914360368421196
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Salmeterol",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.46543124468465574,
+      "app": 0.4656265905721052,
+      "difference": 0.0001953458874494607
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Salmeterol",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.038644198711991165,
+      "app": 0.03866284127626352,
+      "difference": 1.8642564272357276e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Salmeterol",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.78434533371515,
+      "app": 100,
+      "difference": 0.002161207407470789
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Salmeterol",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.0141422247499268,
+      "app": 1.014392618475938,
+      "difference": 0.0002469019826809347
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone:Salmeterol",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3139125311671938,
+      "app": 0.31385279850104153,
+      "difference": 5.973266615227901e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone+Salmeterol:Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 97.98073209762424,
+      "app": 99.99999996791699,
+      "difference": 0.020608826113697843
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone+Salmeterol:Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.08018684141769761,
+      "app": 0.08022298842377129,
+      "difference": 3.6147006073683485e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone+Salmeterol:Placebo",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.7770443686731646,
+      "app": 0.7769954510177461,
+      "difference": 4.891765541847892e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone+Salmeterol:Salmeterol",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": -0.025502710147023426,
+        "se": 0.21394537619028037,
+        "tau2": 0.028761742248109217,
+        "delta": [
+          1,
+          99.99999999550153
+        ],
+        "LRT": 0.4467581997328276,
+        "LRTdf": 1,
+        "LRTp": 0.5038784674747874,
+        "unadjusted": {
+          "mu": -0.09340867716111353,
+          "tau2": 0.00911962896998121
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Formoterol:Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.21173645499575885,
+      "app": -0.2117348277181158,
+      "difference": 1.6272776430514835e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Formoterol:Placebo",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.145874534158976,
+      "app": 0.14586190590083717,
+      "difference": 1.2628258138830395e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Formoterol:Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.509169666537667,
+      "app": 2.5091655222094764,
+      "difference": 1.651673159321125e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "egger_lm",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "statistic": 3.2848876977736947,
+        "p": 0.005422919307677673,
+        "name": "Egger (generic)",
+        "applicable": "any effect scale",
+        "b0": 0.9681152620206563,
+        "seB0": 0.29471791765568983,
+        "limit": 0.0501080698828416
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.41633567837147656,
+      "app": 0.4163394544822834,
+      "difference": 3.776110806819055e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.16430020331758288,
+      "app": 0.1642931923928941,
+      "difference": 7.010924688771736e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 31.693798735480133,
+      "app": 31.693043362228437,
+      "difference": 2.383347158857426e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "peters",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "statistic": 2.9686100214461444,
+        "p": 0.01087584200515986,
+        "name": "Peters (binary)",
+        "applicable": "log-OR, binary outcomes"
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "harbord",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "statistic": 4.091238236195817,
+        "p": 0.001273888789328999,
+        "name": "Harbord (binary)",
+        "applicable": "log-OR with score-test bias correction"
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Tiotropium",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.07297781756391607,
+      "app": 0.07297481360856713,
+      "difference": 3.003955348940268e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Tiotropium",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.353485487812581,
+      "app": 0.3534817931338265,
+      "difference": 3.694678754495584e-06
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Tiotropium",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.2504875536828357,
+      "app": 1.2506106402829422,
+      "difference": 9.84308878117257e-05
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Tiotropium",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.2634593776058982,
+      "app": 0.26343588034809795,
+      "difference": 2.349725780026457e-05
+    },
+    {
+      "dataset": "dat.bangertdrowns2004",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.1476740460747415,
+      "app": 0.14766483437387645,
+      "difference": 9.211700865041639e-06
+    },
+    {
+      "dataset": "dat.bangertdrowns2004",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.07316273376807737,
+      "app": 0.07315791046431584,
+      "difference": 4.823303761530839e-06
+    },
+    {
+      "dataset": "dat.bangertdrowns2004",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.027555997300658594,
+      "app": 0.027552585096359272,
+      "difference": 3.412204299321764e-06
+    },
+    {
+      "dataset": "dat.bangertdrowns2004",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.46650548591311697,
+      "app": 0.4664538552875382,
+      "difference": 5.1630625578780176e-05
+    },
+    {
+      "dataset": "dat.bangertdrowns2004",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.1635442359146069,
+      "app": 1.1635417919509763,
+      "difference": 2.10044754221293e-06
+    },
+    {
+      "dataset": "dat.baskerville2012/smd",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.4690328801205963,
+      "app": 0.46903119546767114,
+      "difference": 1.6846529251601794e-06
+    },
+    {
+      "dataset": "dat.baskerville2012/smd",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.4404443953115725,
+      "app": 0.4404404891460116,
+      "difference": 3.906165560896291e-06
+    },
+    {
+      "dataset": "dat.bassler2004/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -1.111305730090409,
+      "app": -1.1111370019795745,
+      "difference": 0.00015182870587802415
+    },
+    {
+      "dataset": "dat.bassler2004/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.33629971667237823,
+      "app": 0.33636975063421093,
+      "difference": 7.003396183269395e-05
+    },
+    {
+      "dataset": "dat.bassler2004/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.6522427827658834,
+      "app": 0.6525098998066519,
+      "difference": 0.00026711704076842757
+    },
+    {
+      "dataset": "dat.bassler2004/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 76.97941148822892,
+      "app": 99.99999999819373,
+      "difference": 0.2990486425514559
+    },
+    {
+      "dataset": "dat.bassler2004/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.21481058347767146,
+      "app": 0.21556710367011434,
+      "difference": 0.0007565201924428777
+    },
+    {
+      "dataset": "dat.bassler2004/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6430227647633451,
+      "app": 0.6424385221300765,
+      "difference": 0.0005842426332686168
+    },
+    {
+      "dataset": "dat.bcg/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.6804232103844651,
+      "app": -0.6803659206312411,
+      "difference": 5.7289753223943585e-05
+    },
+    {
+      "dataset": "dat.bcg/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.22425730203846203,
+      "app": 0.22430926599230405,
+      "difference": 5.196395384202135e-05
+    },
+    {
+      "dataset": "dat.bcg/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.3798779804599777,
+      "app": 0.3799679348370772,
+      "difference": 8.995437709946597e-05
+    },
+    {
+      "dataset": "dat.bcg/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 95.38321903122082,
+      "app": 99.9999999946315,
+      "difference": 0.04840244447924862
+    },
+    {
+      "dataset": "dat.bcg/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.8254656955072441,
+      "app": 0.8260383439965189,
+      "difference": 0.0005726484892747408
+    },
+    {
+      "dataset": "dat.bcg/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3635869560081319,
+      "app": 0.3634205903809624,
+      "difference": 0.00016636562716948466
+    },
+    {
+      "dataset": "dat.begg1989",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.36325482807045517,
+      "app": 0.3632522595248663,
+      "difference": 2.5685455888879716e-06
+    },
+    {
+      "dataset": "dat.begg1989",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.027583998270098966,
+      "app": 0.024914958880927037,
+      "difference": 0.002669039389171929
+    },
+    {
+      "dataset": "dat.begg1989",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 6.938233734982996e-05,
+      "app": 6.133102274177898e-14,
+      "difference": 6.938233728849894e-05
+    },
+    {
+      "dataset": "dat.begg1989",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 4.789975986818224,
+      "app": 4.790475441355973,
+      "difference": 0.00010427078113203875
+    },
+    {
+      "dataset": "dat.begg1989",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.02862582566884936,
+      "app": 0.02861752632525827,
+      "difference": 8.299343591089414e-06
+    },
+    {
+      "dataset": "dat.berkey1998",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.17510273251535077,
+      "app": 0.17510105400874768,
+      "difference": 1.6785066030977625e-06
+    },
+    {
+      "dataset": "dat.berkey1998r",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.17510273252448225,
+      "app": 0.17510105409024734,
+      "difference": 1.6784342349029924e-06
+    },
+    {
+      "dataset": "dat.bornmann2007/OR:waward:maward",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.20086483899179963,
+      "app": 0.20086376111585108,
+      "difference": 1.0778759485519096e-06
+    },
+    {
+      "dataset": "dat.bornmann2007/OR:waward:maward",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 7.214675384222492,
+      "app": 7.214698220998979,
+      "difference": 3.165322799909114e-06
+    },
+    {
+      "dataset": "dat.bourassa1996/OR:lh.le:rh.le",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.5282875312103885,
+      "app": 1.528284513417038,
+      "difference": 1.9746240736230504e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep1t:ep1c",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.17974985420139755,
+      "app": -0.17972211054653361,
+      "difference": 2.7743654863937595e-05
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep1t:ep1c",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.04304469597844879,
+      "app": 0.04303800412732329,
+      "difference": 6.691851125499582e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep1t:ep1c",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 4.79034397013065e-06,
+      "app": 6.764782011259552e-27,
+      "difference": 4.79034397013065e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep1t:ep1c",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.8281050590983551,
+      "app": 99.99999989149744,
+      "difference": 99.17189483239909
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep1t:ep1c",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 0.000665053390157766,
+      "difference": 0.000665053390157766
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep1t:ep1c",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9794259315086015,
+      "difference": 0.020574068491398534
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep2t:ep2c",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.13196103528257913,
+      "app": -0.13193002127107964,
+      "difference": 3.101401149949168e-05
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep2t:ep2c",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.08285342642849487,
+      "app": 0.0829007073967713,
+      "difference": 4.7280968276428026e-05
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep2t:ep2c",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.015775476645161175,
+      "app": 0.01578280955974311,
+      "difference": 7.332914581936745e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep2t:ep2c",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 91.13744578101411,
+      "app": 99.99999999771126,
+      "difference": 0.09724382925973343
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep2t:ep2c",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.23136045604849542,
+      "app": 0.23169358648666272,
+      "difference": 0.00033313043816729504
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep2t:ep2c",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6305169005926727,
+      "app": 0.6302708932223142,
+      "difference": 0.00024600737035851417
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep3t:ep3c",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": -0.13939939489494602,
+        "se": 0.08383790230613009,
+        "tau2": 0.006094343142084454,
+        "delta": [
+          1,
+          99.9999998671152
+        ],
+        "LRT": 0.04173747357596014,
+        "LRTdf": 1,
+        "LRTp": 0.838121013791595,
+        "unadjusted": {
+          "mu": -0.14066450500731523,
+          "tau2": 0.005612065008486344
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep4t:ep4c",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.056695132529812314,
+        "se": 0.16253357013950628,
+        "tau2": 0.028126290679316886,
+        "delta": [
+          1,
+          99.9999999999809
+        ],
+        "LRT": 0.7190397244106708,
+        "LRTdf": 1,
+        "LRTp": 0.3964590776837542,
+        "unadjusted": {
+          "mu": 0.007383443645229439,
+          "tau2": 0.01448948724836873
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep5t:ep5c",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.06290606196574039,
+      "app": -0.06289442246523057,
+      "difference": 1.1639500509821876e-05
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep5t:ep5c",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.05165244479100719,
+      "app": 0.05164584779049241,
+      "difference": 6.597000514779738e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep5t:ep5c",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.080608401994556e-06,
+      "app": 8.40839955011585e-21,
+      "difference": 2.0806084019945475e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep5t:ep5c",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 84.57548382914864,
+      "app": 99.99999990135116,
+      "difference": 0.18237573554248493
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep5t:ep5c",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.048729653478734924,
+      "app": 0.04844165092726449,
+      "difference": 0.0002880025514704343
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep5t:ep5c",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.8252887005656064,
+      "app": 0.825797448471966,
+      "difference": 0.0005087479063595746
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep6t:ep6c",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.0775880514064024,
+      "app": 0.07758634544711766,
+      "difference": 1.7059592847396e-06
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep6t:ep6c",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 89.9665720928589,
+      "app": 99.99999999748603,
+      "difference": 0.11152395463362925
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep6t:ep6c",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.018146455675653428,
+      "app": 0.0182453414781083,
+      "difference": 9.888580245487333e-05
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep6t:ep6c",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.8928421302517854,
+      "app": 0.8925523248535672,
+      "difference": 0.0002898053982182125
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.mi:aspirin.mi",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.2013748873925414,
+      "app": -0.20135913559863905,
+      "difference": 1.575179390234105e-05
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.mi:aspirin.mi",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.07312865218508198,
+      "app": 0.07309562053986732,
+      "difference": 3.3031645214662286e-05
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.mi:aspirin.mi",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 8.01687229701712e-06,
+      "app": 4.461072706097262e-29,
+      "difference": 8.01687229701712e-06
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.mi:aspirin.mi",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 69.37969598761426,
+      "app": 99.99999999774087,
+      "difference": 0.4413438769693224
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.mi:aspirin.mi",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.11915785342051244,
+      "app": 0.12038544188276568,
+      "difference": 0.0012275884622532374
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.mi:aspirin.mi",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.729949666177012,
+      "app": 0.7286168221952586,
+      "difference": 0.0013328439817533733
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.stroke:aspirin.stroke",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.08525614027662516,
+      "app": -0.08525991615491159,
+      "difference": 3.7758782864272256e-06
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.stroke:aspirin.stroke",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.042992247062146556,
+      "app": 0.04298705824961979,
+      "difference": 5.1888125267643415e-06
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.stroke:aspirin.stroke",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.4161992054455754e-06,
+      "app": 2.4509544426421086e-16,
+      "difference": 1.4161992052004799e-06
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.stroke:aspirin.stroke",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 94.78796994305837,
+      "app": 99.99999999705378,
+      "difference": 0.05498619769076613
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.stroke:aspirin.stroke",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.1519450000767213,
+      "app": 0.15206362853655575,
+      "difference": 0.0001186284598344578
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.stroke:aspirin.stroke",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6966835330605963,
+      "app": 0.6965710301671586,
+      "difference": 0.0001125028934376715
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.death:aspirin.death",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.33454589401966,
+      "app": 99.99999999986817,
+      "difference": 0.006699120631793958
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.death:aspirin.death",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.3853841012773547,
+      "app": 0.3854422857851598,
+      "difference": 5.8184507805147945e-05
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.death:aspirin.death",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5347357487667446,
+      "app": 0.5347049124334913,
+      "difference": 3.083633325329238e-05
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.vdeath:aspirin.vdeath",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.03133847773340273,
+      "app": -0.031340591358569425,
+      "difference": 2.113625166694222e-06
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.vdeath:aspirin.vdeath",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.06200721284775093,
+      "app": 0.06200580552019969,
+      "difference": 1.4073275512380135e-06
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.vdeath:aspirin.vdeath",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 98.27711478181203,
+      "app": 99.99999998845286,
+      "difference": 0.017530889164439293
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.vdeath:aspirin.vdeath",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.24947194504265813,
+      "app": 0.249554278135562,
+      "difference": 8.233309290386903e-05
+    },
+    {
+      "dataset": "dat.chiarito2020/OR:p2y12.vdeath:aspirin.vdeath",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6174471428072755,
+      "app": 0.6173890988882036,
+      "difference": 5.804391907193729e-05
+    },
+    {
+      "dataset": "dat.colditz1994/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.6804232103844651,
+      "app": -0.6803659206312411,
+      "difference": 5.7289753223943585e-05
+    },
+    {
+      "dataset": "dat.colditz1994/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.22425730203846203,
+      "app": 0.22430926599230405,
+      "difference": 5.196395384202135e-05
+    },
+    {
+      "dataset": "dat.colditz1994/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.3798779804599777,
+      "app": 0.3799679348370772,
+      "difference": 8.995437709946597e-05
+    },
+    {
+      "dataset": "dat.colditz1994/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 95.38321903122082,
+      "app": 99.9999999946315,
+      "difference": 0.04840244447924862
+    },
+    {
+      "dataset": "dat.colditz1994/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.8254656955072441,
+      "app": 0.8260383439965189,
+      "difference": 0.0005726484892747408
+    },
+    {
+      "dataset": "dat.colditz1994/OR:tpos:cpos",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3635869560081319,
+      "app": 0.3634205903809624,
+      "difference": 0.00016636562716948466
+    },
+    {
+      "dataset": "dat.collins1985a/OR:b.xti:b.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.09849100651642528,
+      "app": -0.09845429854414284,
+      "difference": 3.670797228244593e-05
+    },
+    {
+      "dataset": "dat.collins1985a/OR:b.xti:b.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.15784795486213438,
+      "app": 0.15787867964082883,
+      "difference": 3.0724778694452004e-05
+    },
+    {
+      "dataset": "dat.collins1985a/OR:b.xti:b.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.1333435447111334,
+      "app": 0.13339320536115223,
+      "difference": 4.966065001882347e-05
+    },
+    {
+      "dataset": "dat.collins1985a/OR:b.xti:b.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 95.53505596309303,
+      "app": 99.99999999748034,
+      "difference": 0.04673618484205637
+    },
+    {
+      "dataset": "dat.collins1985a/OR:b.xti:b.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.3656324983478925,
+      "app": 1.3665950776631703,
+      "difference": 0.0007048597015978914
+    },
+    {
+      "dataset": "dat.collins1985a/OR:b.xti:b.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.24256370061600557,
+      "app": 0.24239775899410154,
+      "difference": 0.00016594162190403106
+    },
+    {
+      "dataset": "dat.collins1985a/OR:o.xti:o.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.23579239259091897,
+      "app": -0.23545693633314385,
+      "difference": 0.00033545625777511856
+    },
+    {
+      "dataset": "dat.collins1985a/OR:o.xti:o.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": null,
+      "app": 0.13289033875069847,
+      "difference": null
+    },
+    {
+      "dataset": "dat.collins1985a/OR:o.xti:o.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.0008445272056445797,
+      "app": 1.515689424253311e-32,
+      "difference": 0.0008445272056445797
+    },
+    {
+      "dataset": "dat.collins1985a/OR:o.xti:o.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 71.19814636022407,
+      "app": 99.99999999947616,
+      "difference": 0.4045309479481432
+    },
+    {
+      "dataset": "dat.collins1985a/OR:o.xti:o.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.4787544269982291,
+      "app": 0.4859988535759854,
+      "difference": 0.007244426577756258
+    },
+    {
+      "dataset": "dat.collins1985a/OR:o.xti:o.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.4889870523285945,
+      "app": 0.4857175739231877,
+      "difference": 0.0032694784054068116
+    },
+    {
+      "dataset": "dat.collins1985a/OR:d.xti:d.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.2377566999037746,
+      "app": -0.23774681006325205,
+      "difference": 9.889840522553373e-06
+    },
+    {
+      "dataset": "dat.collins1985a/OR:d.xti:d.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.2269358927679306,
+      "app": 0.2269487785933252,
+      "difference": 1.2885825394604034e-05
+    },
+    {
+      "dataset": "dat.collins1985a/OR:d.xti:d.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.045368980299884266,
+      "app": 0.04538819601232401,
+      "difference": 1.9215712439742128e-05
+    },
+    {
+      "dataset": "dat.collins1985a/OR:d.xti:d.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 95.95495575992567,
+      "app": 99.99999997387714,
+      "difference": 0.042155657119700644
+    },
+    {
+      "dataset": "dat.collins1985a/OR:d.xti:d.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.7047646624455268,
+      "app": 0.7051011934209015,
+      "difference": 0.00033653097537467147
+    },
+    {
+      "dataset": "dat.collins1985a/OR:d.xti:d.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.40118731508735017,
+      "app": 0.4010749097389543,
+      "difference": 0.00011240534839584981
+    },
+    {
+      "dataset": "dat.collins1985b/OR:pre.xti:pre.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.4256165463916152,
+      "app": -0.4254226590334604,
+      "difference": 0.00019388735815484281
+    },
+    {
+      "dataset": "dat.collins1985b/OR:pre.xti:pre.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.319298818707687,
+      "app": 0.3195821089801399,
+      "difference": 0.0002832902724528852
+    },
+    {
+      "dataset": "dat.collins1985b/OR:pre.xti:pre.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.36683278916832324,
+      "app": 0.3670790415557317,
+      "difference": 0.000246252387408441
+    },
+    {
+      "dataset": "dat.collins1985b/OR:pre.xti:pre.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 94.44138048547732,
+      "app": 99.99999999929048,
+      "difference": 0.0588578807852976
+    },
+    {
+      "dataset": "dat.collins1985b/OR:pre.xti:pre.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.6796831036994604,
+      "app": 0.6803740083777114,
+      "difference": 0.0006909046782510586
+    },
+    {
+      "dataset": "dat.collins1985b/OR:pre.xti:pre.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.4096958675688101,
+      "app": 0.4094579654434761,
+      "difference": 0.00023790212533397748
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ped.xti:ped.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.060777645226158035,
+      "app": -0.06073734842499125,
+      "difference": 4.0296801166787855e-05
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ped.xti:ped.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.19354379942298064,
+      "app": 0.19355404466889906,
+      "difference": 1.0245245918416579e-05
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ped.xti:ped.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 3.122806426056607e-06,
+      "app": 1.242500333753632e-40,
+      "difference": 3.122806426056607e-06
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ped.xti:ped.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 85.21220710644437,
+      "app": 99.99999999904783,
+      "difference": 0.1735407800684123
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ped.xti:ped.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.3504198327820056,
+      "app": 0.3511118944708862,
+      "difference": 0.0006920616888805853
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ped.xti:ped.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5538755690935032,
+      "app": 0.5534843874732407,
+      "difference": 0.00039118162026252623
+    },
+    {
+      "dataset": "dat.collins1985b/OR:stb.xti:stb.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.34447568956019764,
+      "app": -0.34444023655369804,
+      "difference": 3.545300649959726e-05
+    },
+    {
+      "dataset": "dat.collins1985b/OR:stb.xti:stb.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.3336169909324179,
+      "app": 0.3336253181793121,
+      "difference": 8.327246894201945e-06
+    },
+    {
+      "dataset": "dat.collins1985b/OR:stb.xti:stb.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 7.668358087730708e-06,
+      "app": 6.531911023071093e-15,
+      "difference": 7.668358081198797e-06
+    },
+    {
+      "dataset": "dat.collins1985b/OR:stb.xti:stb.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 82.50720017362666,
+      "app": 99.99999999878231,
+      "difference": 0.21201543366329395
+    },
+    {
+      "dataset": "dat.collins1985b/OR:stb.xti:stb.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.18396864906623378,
+      "app": 0.18443783745795628,
+      "difference": 0.00046918839172249704
+    },
+    {
+      "dataset": "dat.collins1985b/OR:stb.xti:stb.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6679845985532344,
+      "app": 0.6675868491268848,
+      "difference": 0.00039774942634962507
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ned.xti:ned.xci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.08716097900744012,
+      "app": -0.08712123085569246,
+      "difference": 3.974815174766222e-05
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ned.xti:ned.xci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.3231109855784518,
+      "app": 0.32312303385062857,
+      "difference": 1.2048272176767849e-05
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ned.xti:ned.xci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 5.038608667666012e-06,
+      "app": 3.0968931506519027e-45,
+      "difference": 5.038608667666012e-06
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ned.xti:ned.xci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 88.7996748771411,
+      "app": 99.99999999889113,
+      "difference": 0.12613024920695093
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ned.xti:ned.xci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.31313823796917717,
+      "app": 0.31359551033971655,
+      "difference": 0.0004572723705393855
+    },
+    {
+      "dataset": "dat.collins1985b/OR:ned.xti:ned.xci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5757607916268378,
+      "app": 0.575482171960449,
+      "difference": 0.00027861966638875746
+    },
+    {
+      "dataset": "dat.dagostino1998/OR:xt:xc",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.3840031251424764,
+      "app": 0.38389202169279035,
+      "difference": 0.00011110344968606745
+    },
+    {
+      "dataset": "dat.dagostino1998/OR:xt:xc",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.10317943400848593,
+      "app": 0.10312030762630485,
+      "difference": 5.912638218108501e-05
+    },
+    {
+      "dataset": "dat.dagostino1998/OR:xt:xc",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 7.865643047743095e-05,
+      "app": 2.6462069001581148e-15,
+      "difference": 7.865643047478474e-05
+    },
+    {
+      "dataset": "dat.dagostino1998/OR:xt:xc",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.44293937208220624,
+      "app": 0.442621292558493,
+      "difference": 0.0003180795237132661
+    },
+    {
+      "dataset": "dat.dagostino1998/OR:xt:xc",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.6596528090479978,
+      "app": 1.6665065301806266,
+      "difference": 0.004129611383335121
+    },
+    {
+      "dataset": "dat.dagostino1998/OR:xt:xc",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.19765020740009484,
+      "app": 0.19672711004835552,
+      "difference": 0.000923097351739316
+    },
+    {
+      "dataset": "dat.damico2009/OR:xt:xc",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -1.2840055893160216,
+      "app": -1.284009945723642,
+      "difference": 3.3928260567317115e-06
+    },
+    {
+      "dataset": "dat.damico2009/OR:xt:xc",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.17502717095258052,
+      "app": 0.17503539301849105,
+      "difference": 8.222065910529208e-06
+    },
+    {
+      "dataset": "dat.damico2009/OR:xt:xc",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.1939230798712866,
+      "app": 0.19397764209490495,
+      "difference": 5.4562223618354055e-05
+    },
+    {
+      "dataset": "dat.damico2009/OR:xt:xc",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 28.21551141379917,
+      "app": 99.99999973609532,
+      "difference": 2.544149821335118
+    },
+    {
+      "dataset": "dat.damico2009/OR:xt:xc",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.0194999187544056,
+      "app": 0.020020745239044402,
+      "difference": 0.0005208264846388033
+    },
+    {
+      "dataset": "dat.damico2009/OR:xt:xc",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.8889427679715529,
+      "app": 0.8874791603559533,
+      "difference": 0.0014636076155996047
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:Placebo/Control",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.20801641413483707,
+      "app": -0.20801404867619633,
+      "difference": 2.3654586407406697e-06
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:Placebo/Control",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 92.8062244879747,
+      "app": 99.99999995893134,
+      "difference": 0.07751393304323856
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:Placebo/Control",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.05259682046560199,
+      "app": 0.05264848363691943,
+      "difference": 5.1663171317439804e-05
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:Placebo/Control",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.818604691982555,
+      "app": 0.8185171779066234,
+      "difference": 8.75140759316606e-05
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:VKAs",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.7137861619725905,
+      "app": 0.7137776873173705,
+      "difference": 8.47465522002544e-06
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:VKAs",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.25837223388449515,
+      "app": 0.25836665244637275,
+      "difference": 5.58143812240397e-06
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:VKAs",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.0744138543474759,
+      "app": 0.07441226148911503,
+      "difference": 1.592858360863203e-06
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Aspirin:VKAs",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 3.469815887320706,
+      "app": 3.469683950838505,
+      "difference": 3.80240584760986e-05
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Placebo/Control:VKAs",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 1.104095459662031,
+      "app": 1.1040942783441081,
+      "difference": 1.0699418356249351e-06
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Placebo/Control:VKAs",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.20456746744878446,
+      "app": 0.20455494210865482,
+      "difference": 1.2525340129632134e-05
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Placebo/Control:VKAs",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.0716146881244133e-05,
+      "app": 1.1958284916598812e-14,
+      "difference": 1.071614686928585e-05
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Placebo/Control:VKAs",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 2.887391906288632,
+      "app": 2.8875552021606348,
+      "difference": 5.655480007647616e-05
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Placebo/Control:VKAs",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.766729422078801,
+      "app": 0.7670075151640825,
+      "difference": 0.00027809308528148335
+    },
+    {
+      "dataset": "dat.dogliotti2014/OR:Placebo/Control:VKAs",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3812307372879242,
+      "app": 0.38114439641277176,
+      "difference": 8.634087515246858e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.10886734843705607,
+      "app": 0.10890170283239652,
+      "difference": 3.435439534044127e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.1082763090678,
+      "app": 0.10825061025493765,
+      "difference": 2.5698812862351428e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 5.749859307265416e-06,
+      "app": 1.3361654605507899e-14,
+      "difference": 5.7498592939037615e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.3184571250133453,
+      "app": 0.318507316728594,
+      "difference": 5.019171524872634e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.5549415431871694,
+      "app": 0.555188430778065,
+      "difference": 0.00024688759089563916
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.45630558236923413,
+      "app": 0.4562054195397255,
+      "difference": 0.00010016282950864319
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA-ICS",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.25629623346105984,
+      "app": 0.2563183575616778,
+      "difference": 2.2124100617970655e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA-ICS",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.12179201503798838,
+      "app": 0.121764285876373,
+      "difference": 2.7729161615377973e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA-ICS",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 4.830384178687372e-06,
+      "app": 1.0731588179995263e-15,
+      "difference": 4.830384177614213e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA-ICS",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.9645497929512886,
+      "app": 0.9648719508322487,
+      "difference": 0.00032215788096012776
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA-ICS",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 0.0004156368324412796,
+      "difference": 0.0004156368324412796
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:LABA-ICS",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9837345160023142,
+      "difference": 0.016265483997685792
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.022509909069570462,
+      "app": 0.0225277374723196,
+      "difference": 1.7828402749137107e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:Placebo",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.0935014636397905,
+      "app": 0.09350701023851789,
+      "difference": 5.546598727382279e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:Placebo",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.0832960219510864e-06,
+      "app": 1.1609553985162329e-23,
+      "difference": 1.0832960219510864e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 89.68370350319013,
+      "app": 99.99999999729287,
+      "difference": 0.11502977788752651
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.8030442948810297,
+      "app": 0.8041115544739448,
+      "difference": 0.001067259592915093
+    },
+    {
+      "dataset": "dat.dong2013/OR:ICS:Placebo",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.37018473122207113,
+      "app": 0.3698669183765567,
+      "difference": 0.00031781284551440914
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:LABA-ICS",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.1603440627386494,
+      "app": 0.15613263285207854,
+      "difference": 0.004211429886570861
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:LABA-ICS",
+      "method": "selection",
+      "quantity": "se",
+      "reference": null,
+      "app": 0.12573048651345908,
+      "difference": null
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:LABA-ICS",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.0005766666823835002,
+      "app": 4.733758261723673e-51,
+      "difference": 0.0005766666823835002
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:LABA-ICS",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 84.89362591960794,
+      "app": 99.99999999996993,
+      "difference": 0.17794473868588592
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:LABA-ICS",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.4635358131619043,
+      "app": 1.476848108679615,
+      "difference": 0.009095982071631108
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:LABA-ICS",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.2263683727846682,
+      "app": 0.22426831680784842,
+      "difference": 0.0021000559768197813
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.10402925395678723,
+      "app": -0.1041156259451286,
+      "difference": 8.637198834136883e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:Placebo",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.09581091421820474,
+      "app": 0.0957136800958255,
+      "difference": 9.723412237924722e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:Placebo",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.394063797128979e-05,
+      "app": 2.424489483937027e-34,
+      "difference": 2.394063797128979e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.99893656007731,
+      "app": 99.99999999954193,
+      "difference": 1.0634507737761537e-05
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.4521199170777628,
+      "app": 0.4540006090628701,
+      "difference": 0.001880691985107319
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA:Placebo",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5013299549980722,
+      "app": 0.5004412261296116,
+      "difference": 0.0008887288684605865
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA-ICS:Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.21126468384210573,
+      "app": -0.21125972913114216,
+      "difference": 4.954710963567255e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA-ICS:Placebo",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.09890813137249391,
+      "app": 0.09890685697193277,
+      "difference": 1.2744005611353693e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA-ICS:Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 94.84783573490694,
+      "app": 99.99999998185582,
+      "difference": 0.05432031429108013
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA-ICS:Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.26523105707724426,
+      "app": 0.2654120947002241,
+      "difference": 0.0001810376229798294
+    },
+    {
+      "dataset": "dat.dong2013/OR:LABA-ICS:Placebo",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6065489106845354,
+      "app": 0.6064261162227791,
+      "difference": 0.00012279446175633701
+    },
+    {
+      "dataset": "dat.dong2013/OR:Placebo:TIO-HH",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.12139727265556063,
+      "app": 0.12139404372900894,
+      "difference": 3.228926551690492e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:Placebo:TIO-HH",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.10059186905076566,
+      "app": 0.10058884225133079,
+      "difference": 3.026799434868721e-06
+    },
+    {
+      "dataset": "dat.dong2013/OR:Placebo:TIO-HH",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.37173521209242,
+      "app": 99.99999999785322,
+      "difference": 0.006322369076275854
+    },
+    {
+      "dataset": "dat.dong2013/OR:Placebo:TIO-HH",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.1718936960232291,
+      "app": 1.1720768420911885,
+      "difference": 0.00015628215134258855
+    },
+    {
+      "dataset": "dat.dong2013/OR:Placebo:TIO-HH",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.27901247838702536,
+      "app": 0.2789749159967123,
+      "difference": 3.756239031305064e-05
+    },
+    {
+      "dataset": "dat.egger2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.7273469586995898,
+      "app": -0.7272140640673234,
+      "difference": 0.00013289463226640041
+    },
+    {
+      "dataset": "dat.egger2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.23377542626241918,
+      "app": 0.23378370429755707,
+      "difference": 8.278035137893047e-06
+    },
+    {
+      "dataset": "dat.egger2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.2800933911112707,
+      "app": 0.2801407150807693,
+      "difference": 4.732396949863604e-05
+    },
+    {
+      "dataset": "dat.egger2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 70.0623463795376,
+      "app": 99.9999999908694,
+      "difference": 0.42730018559691546
+    },
+    {
+      "dataset": "dat.egger2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.41951771426494844,
+      "app": 0.4215596053236226,
+      "difference": 0.002041891058674139
+    },
+    {
+      "dataset": "dat.egger2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5171777935984866,
+      "app": 0.5161598556879554,
+      "difference": 0.0010179379105311748
+    },
+    {
+      "dataset": "dat.fine1993/OR:e1i:c1i",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.1576988803396387,
+      "app": 0.15770559094002262,
+      "difference": 6.710600383930121e-06
+    },
+    {
+      "dataset": "dat.fine1993/OR:e1i:c1i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 3.791699738603554e-06,
+      "app": 8.872082043926116e-16,
+      "difference": 3.7916997377163458e-06
+    },
+    {
+      "dataset": "dat.fine1993/OR:e1i:c1i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.3899801142463655,
+      "app": 0.3900200390504839,
+      "difference": 3.9924804118407486e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e1i:c1i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.8318096721724899,
+      "app": 0.8320954145703432,
+      "difference": 0.0002857423978532836
+    },
+    {
+      "dataset": "dat.fine1993/OR:e1i:c1i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3617497649075705,
+      "app": 0.3616673170685576,
+      "difference": 8.24478390129002e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e2i:c2i",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.4791512911618611,
+      "app": 0.47913884787476235,
+      "difference": 1.2443287098762301e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e2i:c2i",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.12519601219229753,
+      "app": 0.12519192096021206,
+      "difference": 4.091232085473573e-06
+    },
+    {
+      "dataset": "dat.fine1993/OR:e2i:c2i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 4.10644192233855e-06,
+      "app": 1.631123347154893e-14,
+      "difference": 4.106441906027316e-06
+    },
+    {
+      "dataset": "dat.fine1993/OR:e2i:c2i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 2.8178357496002953,
+      "app": 2.8176709787897067,
+      "difference": 5.847424237267695e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e2i:c2i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.0560602957443006,
+      "app": 1.05628237850493,
+      "difference": 0.00021029363713828805
+    },
+    {
+      "dataset": "dat.fine1993/OR:e2i:c2i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3041154631443222,
+      "app": 0.3040646222672928,
+      "difference": 5.084087702939e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e3i:c3i",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.5833835636346034,
+      "app": 0.5833457692590686,
+      "difference": 3.779437553486087e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e3i:c3i",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.15573697833283606,
+      "app": 0.1557130775130804,
+      "difference": 2.3900819755673375e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e3i:c3i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.2081158387956367e-05,
+      "app": 2.600744869311872e-14,
+      "difference": 2.2081158361948918e-05
+    },
+    {
+      "dataset": "dat.fine1993/OR:e3i:c3i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 2.5821142212093453,
+      "app": 2.5816114271875943,
+      "difference": 0.00019472183593626332
+    },
+    {
+      "dataset": "dat.fine1993/OR:e3i:c3i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.8472122940506779,
+      "app": 0.8476539911193584,
+      "difference": 0.0004416970686804689
+    },
+    {
+      "dataset": "dat.fine1993/OR:e3i:c3i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.35734216430566806,
+      "app": 0.3572168605470939,
+      "difference": 0.00012530375857416898
+    },
+    {
+      "dataset": "dat.fine1993/OR:e4i:c4i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 2.8901046272798223,
+      "app": 2.8901081383512435,
+      "difference": 1.2148596241178287e-06
+    },
+    {
+      "dataset": "dat.gibson2002/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.4146922458244986,
+      "app": -0.41467666819735227,
+      "difference": 1.5577627146323714e-05
+    },
+    {
+      "dataset": "dat.gibson2002/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.16601983328632255,
+      "app": 0.16601879241179043,
+      "difference": 1.0408745321210944e-06
+    },
+    {
+      "dataset": "dat.gibson2002/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 3.5635753228372486e-06,
+      "app": 2.189258293887718e-24,
+      "difference": 3.5635753228372486e-06
+    },
+    {
+      "dataset": "dat.gibson2002/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 82.40460557912957,
+      "app": 99.99999994228914,
+      "difference": 0.21352440484972016
+    },
+    {
+      "dataset": "dat.gibson2002/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.05475286631628329,
+      "app": 0.05488639016129859,
+      "difference": 0.00013352384501530423
+    },
+    {
+      "dataset": "dat.gibson2002/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.81499017701666,
+      "app": 0.8147688181078373,
+      "difference": 0.0002213589088226886
+    },
+    {
+      "dataset": "dat.graves2010/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.7986271234472698,
+      "app": -0.7986191320410392,
+      "difference": 7.991406230645204e-06
+    },
+    {
+      "dataset": "dat.graves2010/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.037673100944527124,
+      "app": 0.037676346191607396,
+      "difference": 3.2452470802718514e-06
+    },
+    {
+      "dataset": "dat.graves2010/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 14.221369315907399,
+      "app": 99.99999944457355,
+      "difference": 6.031671650121479
+    },
+    {
+      "dataset": "dat.graves2010/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.004801592942005328,
+      "app": 0.0051142197830778,
+      "difference": 0.00031262684107247196
+    },
+    {
+      "dataset": "dat.graves2010/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.944755977727832,
+      "app": 0.9429888630524156,
+      "difference": 0.001767114675416459
+    },
+    {
+      "dataset": "dat.greb2008/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.17506895514743798,
+      "app": 0.1749809037066899,
+      "difference": 8.805144074808258e-05
+    },
+    {
+      "dataset": "dat.greb2008/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.11638153743389033,
+      "app": 0.11631184580637685,
+      "difference": 6.969162751348235e-05
+    },
+    {
+      "dataset": "dat.greb2008/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 6.770489865784287e-05,
+      "app": 1.2818811662459423e-13,
+      "difference": 6.770489852965475e-05
+    },
+    {
+      "dataset": "dat.greb2008/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.27297606967471594,
+      "app": 0.2726274425571565,
+      "difference": 0.0003486271175594524
+    },
+    {
+      "dataset": "dat.greb2008/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.9597805392711258,
+      "app": 0.9603577071396892,
+      "difference": 0.0005771678685633219
+    },
+    {
+      "dataset": "dat.greb2008/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.32724217695435087,
+      "app": 0.3270967701907157,
+      "difference": 0.0001454067636351697
+    },
+    {
+      "dataset": "dat.greenland1992/b",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.002849965028467431,
+      "app": 0.0028094590479254213,
+      "difference": 4.050598054200971e-05
+    },
+    {
+      "dataset": "dat.greenland1992/b",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.005208467154352719,
+      "app": 0.005201771030109752,
+      "difference": 6.696124242966221e-06
+    },
+    {
+      "dataset": "dat.greenland1992/b",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.1058352022950272,
+      "app": 0.10528019279305569,
+      "difference": 0.0005550095019715151
+    },
+    {
+      "dataset": "dat.greenland1992/b",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 6.201969353175741,
+      "app": 6.198621856223156,
+      "difference": 0.0005397474192405382
+    },
+    {
+      "dataset": "dat.greenland1992/b",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.012760825124604145,
+      "app": 0.012784982349685614,
+      "difference": 2.4157225081469433e-05
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Aprotonin:Control/Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.6253094374567627,
+      "app": -0.6252598664449331,
+      "difference": 4.957101182956336e-05
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Aprotonin:Control/Placebo",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.552191796516518,
+      "app": 0.5522011151541625,
+      "difference": 9.318637644528671e-06
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Aprotonin:Control/Placebo",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.5358109413083002e-05,
+      "app": 4.6089506670259685e-38,
+      "difference": 1.5358109413083002e-05
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Aprotonin:Control/Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 77.19754305114569,
+      "app": 99.99999993560074,
+      "difference": 0.2953780131233936
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Aprotonin:Control/Placebo",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.05835143787140318,
+      "app": 0.058574826122962165,
+      "difference": 0.0002233882515589869
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Aprotonin:Control/Placebo",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.809120791961783,
+      "app": 0.8087628319990642,
+      "difference": 0.00035795996271881236
+    },
+    {
+      "dataset": "dat.hackshaw1998",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.07978348147012342,
+      "app": 0.07978233343158721,
+      "difference": 1.1480385362083734e-06
+    },
+    {
+      "dataset": "dat.hahn2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.4523387308312472,
+      "app": -0.4523601432228948,
+      "difference": 2.141239164760167e-05
+    },
+    {
+      "dataset": "dat.hahn2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.4769484712464412e-06,
+      "app": 1.441223107030384e-34,
+      "difference": 1.4769484712464412e-06
+    },
+    {
+      "dataset": "dat.hahn2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 91.32540440658025,
+      "app": 99.99999999303509,
+      "difference": 0.09498556992789854
+    },
+    {
+      "dataset": "dat.hahn2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.1660090318992573,
+      "app": 0.16621852320773556,
+      "difference": 0.00020949130847824904
+    },
+    {
+      "dataset": "dat.hahn2001/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6836833410825743,
+      "app": 0.6834946279501088,
+      "difference": 0.00018871313246549004
+    },
+    {
+      "dataset": "dat.higgins2008/OR:resp.halo:resp.plac",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 1.616173402099129,
+      "app": 1.6161678732915532,
+      "difference": 3.420924740241329e-06
+    },
+    {
+      "dataset": "dat.higgins2008/OR:resp.halo:resp.plac",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.5817789160467469,
+      "app": 0.5817688374831788,
+      "difference": 1.0078563568161059e-05
+    },
+    {
+      "dataset": "dat.higgins2008/OR:resp.halo:resp.plac",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.6120774414388798,
+      "app": 0.6120664131243945,
+      "difference": 1.1028314485295176e-05
+    },
+    {
+      "dataset": "dat.higgins2008/OR:resp.halo:resp.plac",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.4202076932805758,
+      "app": 1.4201966598102043,
+      "difference": 7.768913253865105e-06
+    },
+    {
+      "dataset": "dat.hine1989/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.8406793432215268,
+      "app": 0.8406686390091376,
+      "difference": 1.0704212389245349e-05
+    },
+    {
+      "dataset": "dat.hine1989/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.3857892733129041,
+      "app": 0.3857787256228061,
+      "difference": 1.0547690098006157e-05
+    },
+    {
+      "dataset": "dat.hine1989/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.283645202446717e-05,
+      "app": 1.980452888650188e-28,
+      "difference": 2.283645202446717e-05
+    },
+    {
+      "dataset": "dat.hine1989/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.88008731286217,
+      "app": 99.99999999864558,
+      "difference": 0.001200566489372328
+    },
+    {
+      "dataset": "dat.hine1989/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.1397608863178057,
+      "app": 2.1398857179682587,
+      "difference": 5.833906547744078e-05
+    },
+    {
+      "dataset": "dat.hine1989/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.14352426059678194,
+      "app": 0.14351258204220307,
+      "difference": 1.1678554578870015e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y1i",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -24.863003693654065,
+      "app": -24.86297855889405,
+      "difference": 1.0109301484738957e-06
+    },
+    {
+      "dataset": "dat.ishak2007/y1i",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 1.220458868065864,
+      "app": 1.2204699352047568,
+      "difference": 9.068014647975555e-06
+    },
+    {
+      "dataset": "dat.ishak2007/y1i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 21.533913216864708,
+      "app": 21.534320052973108,
+      "difference": 1.8892808952233425e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y1i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.8000073417989753,
+      "app": 99.99992655417743,
+      "difference": 99.19991921237846
+    },
+    {
+      "dataset": "dat.ishak2007/y1i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 7.390396868345306e-05,
+      "difference": 7.390396868345306e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y1i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9931408769721582,
+      "difference": 0.006859123027841751
+    },
+    {
+      "dataset": "dat.ishak2007/y2i",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -27.46232131634771,
+      "app": -27.462246465296598,
+      "difference": 2.725590828536457e-06
+    },
+    {
+      "dataset": "dat.ishak2007/y2i",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 1.3731546878370364,
+      "app": 1.3731781580949356,
+      "difference": 1.7092217000068463e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y2i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 25.847016707564677,
+      "app": 25.847926223036204,
+      "difference": 3.51884119477764e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y2i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.8000283697907178,
+      "app": 99.99999393292046,
+      "difference": 99.19996556312974
+    },
+    {
+      "dataset": "dat.ishak2007/y2i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 0.00028551425882028525,
+      "difference": 0.00028551425882028525
+    },
+    {
+      "dataset": "dat.ishak2007/y2i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9865186527056757,
+      "difference": 0.013481347294324264
+    },
+    {
+      "dataset": "dat.ishak2007/y3i",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 1.248409246324409,
+      "app": 1.2484236380146982,
+      "difference": 1.1528022827165827e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y3i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 26.25827980480679,
+      "app": 26.258989908081187,
+      "difference": 2.7043023369215924e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y3i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.8000114046071196,
+      "app": 99.99999636658062,
+      "difference": 99.1999849619735
+    },
+    {
+      "dataset": "dat.ishak2007/y3i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 0.00011477840800466765,
+      "difference": 0.00011477840800466765
+    },
+    {
+      "dataset": "dat.ishak2007/y3i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9914520523852635,
+      "difference": 0.00854794761473654
+    },
+    {
+      "dataset": "dat.ishak2007/y4i",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -24.151546942516877,
+      "app": -24.15121572568373,
+      "difference": 1.371410427392149e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y4i",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 2.031818354396171,
+      "app": 2.0320168062737443,
+      "difference": 9.767205672883953e-05
+    },
+    {
+      "dataset": "dat.ishak2007/y4i",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 26.27804095036841,
+      "app": 26.28387437841798,
+      "difference": 0.00022198869621170166
+    },
+    {
+      "dataset": "dat.ishak2007/y4i",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.8002887534753136,
+      "app": 99.99998622519121,
+      "difference": 99.1996974717159
+    },
+    {
+      "dataset": "dat.ishak2007/y4i",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 0.0005811495784655563,
+      "difference": 0.0005811495784655563
+    },
+    {
+      "dataset": "dat.ishak2007/y4i",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9807672245238944,
+      "difference": 0.01923277547610558
+    },
+    {
+      "dataset": "dat.kalaian1996",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.14268419608665683,
+      "app": 0.14271320175622565,
+      "difference": 2.9005669568815673e-05
+    },
+    {
+      "dataset": "dat.kalaian1996",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.03021974483858026,
+      "app": 0.0302261520277954,
+      "difference": 6.4071892151400245e-06
+    },
+    {
+      "dataset": "dat.kalaian1996",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.9790399574372581,
+      "app": 1.9815001619267276,
+      "difference": 0.0012431302764878524
+    },
+    {
+      "dataset": "dat.kalaian1996",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.32516389171046,
+      "app": 1.325337929832127,
+      "difference": 0.00013133328092905736
+    },
+    {
+      "dataset": "dat.kalaian1996",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.24966739214247535,
+      "app": 0.2496363014196612,
+      "difference": 3.109072281415326e-05
+    },
+    {
+      "dataset": "dat.karner2014/sgrq.md",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -2.9547125083920864,
+      "app": -2.9545973381600303,
+      "difference": 3.897849003210413e-05
+    },
+    {
+      "dataset": "dat.karner2014/sgrq.md",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.29740853885905455,
+      "app": 0.29735126345571233,
+      "difference": 5.727540334221626e-05
+    },
+    {
+      "dataset": "dat.karner2014/sgrq.md",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.06338388377574905,
+      "app": 0.06324582910422658,
+      "difference": 0.00013805467152247508
+    },
+    {
+      "dataset": "dat.karner2014/sgrq.md",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 9.1734140157135,
+      "app": 99.99999530236678,
+      "difference": 9.901066400259802
+    },
+    {
+      "dataset": "dat.karner2014/sgrq.md",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.0027959234037311376,
+      "app": 0.003107651017920432,
+      "difference": 0.0003117276141892944
+    },
+    {
+      "dataset": "dat.karner2014/sgrq.md",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.9578303148725562,
+      "app": 0.9555439072255858,
+      "difference": 0.002286407646970412
+    },
+    {
+      "dataset": "dat.karner2014/fev1.md",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 112.91332364118473,
+      "app": 112.91666810750375,
+      "difference": 2.9619766836808305e-05
+    },
+    {
+      "dataset": "dat.karner2014/fev1.md",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 6.358337257700761,
+      "app": 6.357996826854404,
+      "difference": 5.354086022174419e-05
+    },
+    {
+      "dataset": "dat.karner2014/fev1.md",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 342.65869980245543,
+      "app": 342.64691709764554,
+      "difference": 3.4386124784462344e-05
+    },
+    {
+      "dataset": "dat.karner2014/fev1.md",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.24672980871303585,
+      "app": 0.2467629743567061,
+      "difference": 3.316564367025765e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.exa:placebo.exa",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.24033556220845118,
+      "app": -0.24031231446212292,
+      "difference": 2.3247746328253216e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.exa:placebo.exa",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.05206386932681052,
+      "app": 0.05211238070044827,
+      "difference": 4.8511373637746824e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.exa:placebo.exa",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.018442930377417333,
+      "app": 0.01850104604859418,
+      "difference": 5.811567117684768e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.exa:placebo.exa",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 52.04595306842158,
+      "app": 99.9999999797596,
+      "difference": 0.9213789753892259
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.exa:placebo.exa",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.29152478405655735,
+      "app": 0.29443634648553996,
+      "difference": 0.002911562428982606
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.exa:placebo.exa",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5892450657123955,
+      "app": 0.5873915405541122,
+      "difference": 0.0018535251582832979
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sexa:placebo.sexa",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.057296199947807554,
+      "app": 0.057437307723235756,
+      "difference": 0.00014110777542820224
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sexa:placebo.sexa",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.3848996698383985,
+      "app": 0.38505777159692733,
+      "difference": 0.00015810175852881692
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sexa:placebo.sexa",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.15771794131298095,
+      "app": 0.15778933860991928,
+      "difference": 7.139729693833585e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sexa:placebo.sexa",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.20992318896519,
+      "app": 99.99999999948585,
+      "difference": 0.007963687352280273
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sexa:placebo.sexa",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.868390771172237,
+      "app": 1.8689506140157945,
+      "difference": 0.0002996390542040313
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sexa:placebo.sexa",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.1716595003221934,
+      "app": 0.17159531538383976,
+      "difference": 6.41849383536397e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.hospi:placebo.hospi",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.2963417349339873,
+      "app": 0.29638966878987605,
+      "difference": 4.7933855888748766e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.hospi:placebo.hospi",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.2930186781965991,
+      "app": 0.2930582323376249,
+      "difference": 3.955414102579935e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.hospi:placebo.hospi",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.13190490460995866,
+      "app": 0.13192287546541862,
+      "difference": 1.7970855459958912e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.hospi:placebo.hospi",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.88078148584802,
+      "app": 100,
+      "difference": 0.001193608143413189
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.hospi:placebo.hospi",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 5.306762308827221,
+      "app": 5.307019152349994,
+      "difference": 4.839928902533153e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.hospi:placebo.hospi",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.021242798805217435,
+      "app": 0.02123966709238856,
+      "difference": 3.1317128288757545e-06
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.deaths:placebo.deaths",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.011206397360232965,
+      "app": 0.10773424735259034,
+      "difference": 0.1189406447128233
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.deaths:placebo.deaths",
+      "method": "selection",
+      "quantity": "se",
+      "reference": null,
+      "app": 0.16670536218735763,
+      "difference": null
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.deaths:placebo.deaths",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.0008455806774379369,
+      "app": 0.027026111498057483,
+      "difference": 0.026180530820619545
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.deaths:placebo.deaths",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 75.61170572399323,
+      "app": 99.9999999999198,
+      "difference": 0.3225465427926147
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.deaths:placebo.deaths",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.0008015394163152,
+      "app": 1.4915551479130045,
+      "difference": 0.4903605651754945
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.deaths:placebo.deaths",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.31711663648739435,
+      "app": 0.22197532656868646,
+      "difference": 0.0951413099187079
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sae:placebo.sae",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.04765628078399108,
+      "app": 0.047666209447553676,
+      "difference": 9.928663562593087e-06
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sae:placebo.sae",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.040462413209608646,
+      "app": 0.04046539809695743,
+      "difference": 2.9848873487822725e-06
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sae:placebo.sae",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 96.61695412673969,
+      "app": 99.9999999983344,
+      "difference": 0.0350150333569502
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sae:placebo.sae",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.7560334798961126,
+      "app": 1.7567675130560536,
+      "difference": 0.00041800635827538626
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.sae:placebo.sae",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.18512003422131665,
+      "app": 0.185028218625793,
+      "difference": 9.181559552365326e-05
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.dropout:placebo.dropout",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.42084999345017315,
+      "app": -0.4208486018098603,
+      "difference": 1.3916403128755306e-06
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.dropout:placebo.dropout",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 88.46646798965175,
+      "app": 99.99999992301565,
+      "difference": 0.1303717916568459
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.dropout:placebo.dropout",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.09961648318066807,
+      "app": 0.09975049660160629,
+      "difference": 0.0001340134209382171
+    },
+    {
+      "dataset": "dat.karner2014/OR:tiotropium.dropout:placebo.dropout",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.7522903554707409,
+      "app": 0.7521292535294712,
+      "difference": 0.00016110194126961463
+    },
+    {
+      "dataset": "dat.knapp2017/yi_iq",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.4629764941400984,
+      "app": 0.46297830435941756,
+      "difference": 1.8102193191649185e-06
+    },
+    {
+      "dataset": "dat.knapp2017/yi_iq",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.05428884259838187,
+      "app": 0.05428710438486267,
+      "difference": 1.7382135191965076e-06
+    },
+    {
+      "dataset": "dat.knapp2017/yi_iq",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.1640227869365286e-06,
+      "app": 3.9638143734942026e-15,
+      "difference": 1.1640227829727143e-06
+    },
+    {
+      "dataset": "dat.knapp2017/yi_iq",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.22964118042968,
+      "app": 1.2296528503617112,
+      "difference": 9.490518223445078e-06
+    },
+    {
+      "dataset": "dat.knapp2017/yi_iq",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.1434144046777659,
+      "app": 0.14351430971422818,
+      "difference": 9.990503646228888e-05
+    },
+    {
+      "dataset": "dat.knapp2017/yi_iq",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.7049099525790403,
+      "app": 0.7048120097694741,
+      "difference": 9.794280956620938e-05
+    },
+    {
+      "dataset": "dat.konstantopoulos2011",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.2809447144923941,
+      "app": 0.28094573294359754,
+      "difference": 1.0184512034272508e-06
+    },
+    {
+      "dataset": "dat.konstantopoulos2011",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 3.5914979943096754,
+      "app": 3.5915163165446415,
+      "difference": 5.101557900114854e-06
+    },
+    {
+      "dataset": "dat.landenberger2005/OR:n.cbt.rec:n.ctrl.rec",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.4020240475654091,
+      "app": -0.40201552779049976,
+      "difference": 8.519774909343525e-06
+    },
+    {
+      "dataset": "dat.landenberger2005/OR:n.cbt.rec:n.ctrl.rec",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.06718244336062056,
+      "app": 0.06718844110610994,
+      "difference": 5.9977454893861415e-06
+    },
+    {
+      "dataset": "dat.landenberger2005/OR:n.cbt.rec:n.ctrl.rec",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.11919565539675714,
+      "app": 0.11921519219754771,
+      "difference": 1.9536800790573294e-05
+    },
+    {
+      "dataset": "dat.landenberger2005/OR:n.cbt.rec:n.ctrl.rec",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 94.27954778404192,
+      "app": 99.999999999643,
+      "difference": 0.06067543120491435
+    },
+    {
+      "dataset": "dat.landenberger2005/OR:n.cbt.rec:n.ctrl.rec",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.948089841684336,
+      "app": 1.9495504090314029,
+      "difference": 0.0007497433207721463
+    },
+    {
+      "dataset": "dat.landenberger2005/OR:n.cbt.rec:n.ctrl.rec",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.16279283725764845,
+      "app": 0.16263530667155968,
+      "difference": 0.00015753058608877768
+    },
+    {
+      "dataset": "dat.laopaiboon2015/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.08886947210186122,
+      "app": 0.08886744511251421,
+      "difference": 2.0269893470092892e-06
+    },
+    {
+      "dataset": "dat.laopaiboon2015/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.44433583475305777,
+      "app": 0.4443304184734425,
+      "difference": 5.4162796152557036e-06
+    },
+    {
+      "dataset": "dat.laopaiboon2015/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.7137465821945559,
+      "app": 0.7137412904983423,
+      "difference": 5.291696213549635e-06
+    },
+    {
+      "dataset": "dat.laopaiboon2015/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.9319425265454018,
+      "app": 0.9319280693461276,
+      "difference": 1.4457199274175991e-05
+    },
+    {
+      "dataset": "dat.lau1992/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.263435845133566,
+      "app": -0.2634419738283392,
+      "difference": 6.128694773233079e-06
+    },
+    {
+      "dataset": "dat.lau1992/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.03321539427723923,
+      "app": 0.0330967984970007,
+      "difference": 0.00011859578023852568
+    },
+    {
+      "dataset": "dat.lau1992/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.566641191976972e-05,
+      "app": 4.735400635623726e-18,
+      "difference": 2.5666411919764982e-05
+    },
+    {
+      "dataset": "dat.lau1992/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 87.75579030997788,
+      "app": 99.99999999952173,
+      "difference": 0.13952594633691856
+    },
+    {
+      "dataset": "dat.lau1992/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.48770357793878105,
+      "app": 0.4947017066973842,
+      "difference": 0.006998128758603173
+    },
+    {
+      "dataset": "dat.lau1992/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.4849534778996666,
+      "app": 0.48183744361554504,
+      "difference": 0.0031160342841215494
+    },
+    {
+      "dataset": "dat.lee2004/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.6411952581777226,
+      "app": -0.6406298236901196,
+      "difference": 0.0005654344876030448
+    },
+    {
+      "dataset": "dat.lee2004/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.21891952364960895,
+      "app": 0.21911370103566333,
+      "difference": 0.00019417738605437274
+    },
+    {
+      "dataset": "dat.lee2004/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.37609709672445224,
+      "app": 0.37662146803610985,
+      "difference": 0.0005243713116576121
+    },
+    {
+      "dataset": "dat.lee2004/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 65.98718497786535,
+      "app": 99.99999999725424,
+      "difference": 0.5154457646707932
+    },
+    {
+      "dataset": "dat.lee2004/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.5670462963087743,
+      "app": 0.5707875203208772,
+      "difference": 0.0037412240121028617
+    },
+    {
+      "dataset": "dat.lee2004/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.45143503256839745,
+      "app": 0.4499461464043317,
+      "difference": 0.001488886164065728
+    },
+    {
+      "dataset": "dat.li2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.5067919192274851,
+      "app": -0.5067646340763529,
+      "difference": 2.7285151132261376e-05
+    },
+    {
+      "dataset": "dat.li2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.17557928825198846,
+      "app": 0.17557596104073503,
+      "difference": 3.32721125342883e-06
+    },
+    {
+      "dataset": "dat.li2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.17515577528927886,
+      "app": 0.1751510131834144,
+      "difference": 4.762105864475341e-06
+    },
+    {
+      "dataset": "dat.li2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 97.90147555836477,
+      "app": 99.999999998972,
+      "difference": 0.02143506447312107
+    },
+    {
+      "dataset": "dat.li2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.7800249026686075,
+      "app": 0.7802192270749799,
+      "difference": 0.00019432440637245918
+    },
+    {
+      "dataset": "dat.li2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.3771335237747279,
+      "app": 0.3770741007462174,
+      "difference": 5.942302851053016e-05
+    },
+    {
+      "dataset": "dat.linde2005/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.542353982078538,
+      "app": 0.5423553242191442,
+      "difference": 1.3421406062086305e-06
+    },
+    {
+      "dataset": "dat.linde2005/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.8727354222781798,
+      "app": 0.8727341717724391,
+      "difference": 1.2505057407352638e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp2",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.11284235823318589,
+      "app": 0.11283557267945325,
+      "difference": 6.785553732638339e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp2",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.48797095775751687,
+      "app": 0.48797333775219615,
+      "difference": 2.379994679280184e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp2",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.042897664231134,
+      "app": 1.0428944813806567,
+      "difference": 3.05192981686052e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp3",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.30088945762842567,
+      "app": 0.30088185225247904,
+      "difference": 7.605375946628801e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp3",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.16543309299045952,
+      "app": 0.165400838322039,
+      "difference": 3.2254668420522714e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp3",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.7998462918292968e-05,
+      "app": 1.9616552765307812e-13,
+      "difference": 2.799846272212744e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp3",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.47057454101903146,
+      "app": 0.47044125854977153,
+      "difference": 0.00013328246925992104
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp3",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.33158444588634506,
+      "app": 0.33177963290024426,
+      "difference": 0.00019518701389920068
+    },
+    {
+      "dataset": "dat.linde2015/OR:resp1:resp3",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5647275950545362,
+      "app": 0.5646130500445605,
+      "difference": 0.00011454500997565287
+    },
+    {
+      "dataset": "dat.linde2015/OR:remi1:remi2",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.16581881977601745,
+      "app": 0.16581722940359098,
+      "difference": 1.5903724264743069e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:remi1:remi2",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.14707351664005308,
+      "app": 0.14706972286414943,
+      "difference": 3.7937759036488217e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:remi1:remi2",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.2542393468737254,
+      "app": 1.2542238791089382,
+      "difference": 1.233238681737996e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:remi1:remi3",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.4188436199006356,
+        "se": 0.3438447822166965,
+        "tau2": 1.4233050639537376e-13,
+        "delta": [
+          1,
+          0.06623730713569996
+        ],
+        "LRT": 2.5580324931543097,
+        "LRTdf": 1,
+        "LRTp": 0.10973507518563486,
+        "unadjusted": {
+          "mu": 0.8016023734636432,
+          "tau2": 3.981071705534898e-15
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss2",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.09966386554671873,
+      "app": 0.09966265610941678,
+      "difference": 1.2094373019466698e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss3",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.017334166606427816,
+      "app": -0.01732471816495909,
+      "difference": 9.448441468724866e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss3",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.1945181630455665,
+      "app": 0.19451962717207386,
+      "difference": 1.4641265073667142e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss3",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.0703952535675457e-06,
+      "app": 3.1431292831330685e-35,
+      "difference": 2.0703952535675457e-06
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss3",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 96.48128424188823,
+      "app": 99.99999999190182,
+      "difference": 0.03647044893382442
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss3",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.30191472566134525,
+      "app": 0.3020434541102457,
+      "difference": 0.00012872844890043922
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss1:loss3",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5826845423190992,
+      "app": 0.5826041855914184,
+      "difference": 8.035672768080815e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae2",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.36879046099851764,
+      "app": 0.3685691980335246,
+      "difference": 0.00022126296499302978
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae2",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.25361652380352456,
+      "app": 0.2535337506520635,
+      "difference": 8.277315146104636e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae2",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.5154373662597449,
+      "app": 0.5152680138669103,
+      "difference": 0.00016935239283455417
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae2",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 3.737661752944979,
+      "app": 3.736788116729425,
+      "difference": 0.00023373870438264335
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae3",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.5372264303118367,
+      "app": 0.537352537614261,
+      "difference": 0.00012610730242434975
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae3",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.5931651983714961,
+      "app": 0.593328702916179,
+      "difference": 0.0001635045446829464
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae3",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.38848097529600784,
+      "app": 0.38860679952537525,
+      "difference": 0.00012582422936741056
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae3",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 98.38755601395616,
+      "app": 99.99999999896974,
+      "difference": 0.01638869843239994
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae3",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.5728125455255473,
+      "app": 1.5733226099412825,
+      "difference": 0.0003243008311360877
+    },
+    {
+      "dataset": "dat.linde2015/OR:loss.ae1:loss.ae3",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.2097990336158339,
+      "app": 0.20972514558001742,
+      "difference": 7.388803581648284e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:ae1:ae3",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.27887517498907405,
+      "app": 0.27882681590211517,
+      "difference": 4.835908695888236e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:ae1:ae3",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.24716466272907936,
+      "app": 0.24712822133995446,
+      "difference": 3.644138912489714e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:ae1:ae3",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.047525967297921e-05,
+      "app": 7.954736450347283e-14,
+      "difference": 2.0475259593431847e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:ae1:ae3",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.15129847856186113,
+      "app": 0.1512297835898245,
+      "difference": 6.869497203662589e-05
+    },
+    {
+      "dataset": "dat.linde2015/OR:ae1:ae3",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.4353807820210669,
+      "app": 0.43550759916482384,
+      "difference": 0.00012681714375695208
+    },
+    {
+      "dataset": "dat.linde2015/OR:ae1:ae3",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.5093604230125545,
+      "app": 0.5092987541014962,
+      "difference": 6.166891105829908e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:UC",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.7272842332960641,
+      "app": 0.727274139392884,
+      "difference": 1.0093903180075081e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:UC",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.26942823643764713,
+      "app": 0.269420519712436,
+      "difference": 7.716725211104336e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:UC",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 7.797160608440464e-06,
+      "app": 3.325065969966533e-32,
+      "difference": 7.797160608440464e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:UC",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.93027268386915,
+      "app": 99.99999999888063,
+      "difference": 0.0006977596792121256
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:UC",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 3.5394755424085815,
+      "app": 3.5396209128913867,
+      "difference": 4.1071192910755194e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:UC",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.05992440600946203,
+      "app": 0.0599191541965064,
+      "difference": 5.251812955631152e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Hypericum:Placebo",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.9006530973979084,
+      "app": 0.9006551919256203,
+      "difference": 2.0945277118267214e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Hypericum:Placebo",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 2.727355340500054,
+      "app": 2.7273901760290644,
+      "difference": 1.2772640401123472e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Low-dose SARI:NaSSa",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.5488176461853563,
+      "app": 0.548839292720388,
+      "difference": 2.164653503167191e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Low-dose SARI:NaSSa",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.3465599517553462,
+      "app": 0.34652294435838066,
+      "difference": 3.700739696554933e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Low-dose SARI:NaSSa",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.3120734118065575e-05,
+      "app": 9.387411389531433e-14,
+      "difference": 2.312073402419146e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Low-dose SARI:NaSSa",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.2932941288697508,
+      "app": 0.29328690043121086,
+      "difference": 7.228438539952364e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Low-dose SARI:NaSSa",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.5401949283978293,
+      "app": 0.5404581640029993,
+      "difference": 0.0002632356051699425
+    },
+    {
+      "dataset": "dat.linde2016/OR:Low-dose SARI:NaSSa",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.46235195303666704,
+      "app": 0.46224291045361954,
+      "difference": 0.0001090425830475028
+    },
+    {
+      "dataset": "dat.linde2016/OR:No contact CBT:UC",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.7634675963836003,
+      "app": 0.7634637959711847,
+      "difference": 3.8004124155444075e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:No contact CBT:UC",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.3028259856097243,
+      "app": 0.3028239366530452,
+      "difference": 2.0489566791015434e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:No contact CBT:UC",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.0006480450681263e-05,
+      "app": 3.608334613716111e-42,
+      "difference": 1.0006480450681263e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:No contact CBT:UC",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.93220019884147,
+      "app": 99.99999999999964,
+      "difference": 0.0006784580047599066
+    },
+    {
+      "dataset": "dat.linde2016/OR:No contact CBT:UC",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 3.66434157711206,
+      "app": 3.6645884742630757,
+      "difference": 6.73783122614979e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:No contact CBT:UC",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.05558860293916822,
+      "app": 0.05558036739340855,
+      "difference": 8.235545759675833e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Other face-to-face:UC",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.5213950745989349,
+        "se": 0.20932878602114258,
+        "tau2": 9.875755756599702e-15,
+        "delta": [
+          1,
+          2.5133764850506988
+        ],
+        "LRT": 0.3762339299966875,
+        "LRTdf": 1,
+        "LRTp": 0.5396256969347838,
+        "unadjusted": {
+          "mu": 0.43110226329355406,
+          "tau2": 3.9810717055349545e-15
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:SSRI",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.09357312384079908,
+      "app": 0.09357205541574912,
+      "difference": 1.0684250499604087e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:SSRI",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.2617133932564883e-06,
+      "app": 1.3973611004138967e-24,
+      "difference": 1.2617133932564883e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:SSRI",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 90.37080934868409,
+      "app": 99.99999984894632,
+      "difference": 0.10655200024943053
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:SSRI",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.0019016523709072253,
+      "app": 0.002012870878023154,
+      "difference": 0.00011121850711592884
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:SSRI",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.9652169230650831,
+      "app": 0.9642148911252014,
+      "difference": 0.0010020319398816868
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:TCA",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.5132868639651842,
+      "app": -0.513278048524419,
+      "difference": 8.815440765141958e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:TCA",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.13476340130771125,
+      "app": 0.13478005615823427,
+      "difference": 1.665485052301796e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:TCA",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.02713593303739247,
+      "app": 0.027157444747748533,
+      "difference": 2.1511710356064e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:TCA",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 36.48706633954484,
+      "app": 99.9999994285933,
+      "difference": 1.740697169183286
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:TCA",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.02425934580566569,
+      "app": 0.024703682854573472,
+      "difference": 0.0004443370489077836
+    },
+    {
+      "dataset": "dat.linde2016/OR:Placebo:TCA",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.876226836322909,
+      "app": 0.8751076770316185,
+      "difference": 0.0011191592912904724
+    },
+    {
+      "dataset": "dat.linde2016/OR:SNRI:SSRI",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.24697686383090814,
+      "app": 0.24697577445736643,
+      "difference": 1.0893735417072392e-06
+    },
+    {
+      "dataset": "dat.linde2016/OR:SSRI:TCA",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.95651539027493,
+      "app": 99.99999999984261,
+      "difference": 0.00043503526906576594
+    },
+    {
+      "dataset": "dat.linde2016/OR:SSRI:TCA",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.1977314394461729,
+      "app": 1.1976466918196014,
+      "difference": 7.075678552004952e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:SSRI:TCA",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.27377556231819483,
+      "app": 0.27379253657203806,
+      "difference": 1.697425384322715e-05
+    },
+    {
+      "dataset": "dat.linde2016/OR:Self-help CBT:UC",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.33347221891509543,
+        "se": 0.2462907537421703,
+        "tau2": 2.2424240074934012e-14,
+        "delta": [
+          1,
+          0.2121484396165436
+        ],
+        "LRT": 0.8523925795400686,
+        "LRTdf": 1,
+        "LRTp": 0.3558763686459371,
+        "unadjusted": {
+          "mu": 0.512941042111115,
+          "tau2": 3.981071705534926e-15
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.lopez2019/diff",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.5697893201121252,
+      "app": 0.5695872506676722,
+      "difference": 0.00020206944445300135
+    },
+    {
+      "dataset": "dat.lopez2019/diff",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.7025324524401332,
+      "app": 0.702411274438446,
+      "difference": 0.0001211780016872055
+    },
+    {
+      "dataset": "dat.lopez2019/diff",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 5.823952423504914,
+      "app": 5.823648104814938,
+      "difference": 5.2252949173726284e-05
+    },
+    {
+      "dataset": "dat.lopez2019/diff",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 43.36817692261579,
+      "app": 43.359029027676634,
+      "difference": 0.0002109356580858228
+    },
+    {
+      "dataset": "dat.bauer2002/wmwstat",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.6845519843455494,
+      "app": 0.684550929493883,
+      "difference": 1.0548516664599106e-06
+    },
+    {
+      "dataset": "dat.bauer2002/wmwstat",
+      "method": "selection",
+      "quantity": "se",
+      "reference": null,
+      "app": 0.023414545260546867,
+      "difference": null
+    },
+    {
+      "dataset": "dat.bauer2002/wmwstat",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.7999999999942602,
+      "app": 1.667871171656504,
+      "difference": 0.8678711716622438
+    },
+    {
+      "dataset": "dat.bauer2002/wmwstat",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.9996647709101363,
+      "app": 1,
+      "difference": 0.00033522908986372
+    },
+    {
+      "dataset": "dat.curtin2002/mean",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.4766579249594532,
+      "app": -0.4766506183010466,
+      "difference": 7.306658406591726e-06
+    },
+    {
+      "dataset": "dat.curtin2002/mean",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 2.21120737671902,
+      "app": 2.211240140539247,
+      "difference": 1.481716304497613e-05
+    },
+    {
+      "dataset": "dat.curtin2002/mean",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 22.718513583824848,
+      "app": 22.7188656968928,
+      "difference": 1.5498948320351723e-05
+    },
+    {
+      "dataset": "dat.curtin2002/mean",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.93582443014287,
+      "app": 99.9999999998603,
+      "difference": 0.0006421678120270118
+    },
+    {
+      "dataset": "dat.curtin2002/mean",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 4.997227980616756,
+      "app": 4.9973032343201425,
+      "difference": 1.5059089494819622e-05
+    },
+    {
+      "dataset": "dat.curtin2002/mean",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.025387948632778698,
+      "app": 0.025386844733910174,
+      "difference": 1.1038988685235784e-06
+    },
+    {
+      "dataset": "dat.maire2019/dat/s1",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 165.49468619994678,
+      "app": 166.6013546498645,
+      "difference": 0.006687033132777865
+    },
+    {
+      "dataset": "dat.maire2019/dat/s1",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 30.351461132270945,
+      "app": 30.17396688977888,
+      "difference": 0.0058479636851269685
+    },
+    {
+      "dataset": "dat.maire2019/dat/s1",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 11023.903670532982,
+      "app": 10994.816799702263,
+      "difference": 0.002638527303941202
+    },
+    {
+      "dataset": "dat.maire2019/dat/s1",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.5425965052437285,
+      "app": 0.5509516543576334,
+      "difference": 0.008355149113904892
+    },
+    {
+      "dataset": "dat.maire2019/dat/s1",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.0394188666948594,
+      "app": 1.040759135267308,
+      "difference": 0.0012894402972599519
+    },
+    {
+      "dataset": "dat.maire2019/dat/s1",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.30795666665458665,
+      "app": 0.3076449828493488,
+      "difference": 0.0003116838052378279
+    },
+    {
+      "dataset": "dat.maire2019/dat/s2",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -68.12107396872602,
+      "app": -67.0764161180023,
+      "difference": 0.015335310937747686
+    },
+    {
+      "dataset": "dat.maire2019/dat/s2",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 29.96573232604998,
+      "app": 30.267693539659707,
+      "difference": 0.010076884166359025
+    },
+    {
+      "dataset": "dat.maire2019/dat/s2",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 15038.922793957841,
+      "app": 15114.465317678123,
+      "difference": 0.005023133954157425
+    },
+    {
+      "dataset": "dat.maire2019/dat/s2",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.242063560700648,
+      "app": 1.2668262891490745,
+      "difference": 0.01993676429445991
+    },
+    {
+      "dataset": "dat.maire2019/dat/s2",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.06399828316438061,
+      "app": 0.06519797922209136,
+      "difference": 0.001199696057710753
+    },
+    {
+      "dataset": "dat.maire2019/dat/s2",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.8002845804608718,
+      "app": 0.7984613192033257,
+      "difference": 0.0018232612575460605
+    },
+    {
+      "dataset": "dat.maire2019/dat/s3",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 4.522247952127676,
+      "app": 4.499371931702143,
+      "difference": 0.00505855067384583
+    },
+    {
+      "dataset": "dat.maire2019/dat/s3",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 28.2421477174883,
+      "app": 28.233931357719225,
+      "difference": 0.00029092545833502855
+    },
+    {
+      "dataset": "dat.maire2019/dat/s3",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 7269.311758087192,
+      "app": 7268.131695857493,
+      "difference": 0.00016233479440289276
+    },
+    {
+      "dataset": "dat.maire2019/dat/s3",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.0800320192862969,
+      "app": 1.079554760444259,
+      "difference": 0.00044189323419619066
+    },
+    {
+      "dataset": "dat.maire2019/dat/s3",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.9272594991301669,
+      "app": 0.927256407509996,
+      "difference": 3.0916201708697244e-06
+    },
+    {
+      "dataset": "dat.tian2009/OR:deaths",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.01517859879371699,
+      "app": -0.015177044660079762,
+      "difference": 1.5541336372271175e-06
+    },
+    {
+      "dataset": "dat.tian2009/OR:deaths",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.923270508689972e-06,
+      "app": 3.7170528187217537e-69,
+      "difference": 1.923270508689972e-06
+    },
+    {
+      "dataset": "dat.tian2009/OR:deaths",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.0044479948874,
+      "app": 99.99999999797289,
+      "difference": 0.010055629047463637
+    },
+    {
+      "dataset": "dat.tian2009/OR:deaths",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.2192356435008946,
+      "app": 2.219501407784122,
+      "difference": 0.00011975487326271715
+    },
+    {
+      "dataset": "dat.tian2009/OR:deaths",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.13630052534055362,
+      "app": 0.13627706349253843,
+      "difference": 2.3461848015188247e-05
+    },
+    {
+      "dataset": "dat.tian2009/OR:infarcts",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.17299776533100444,
+      "app": -0.17300269435630183,
+      "difference": 4.929025297389922e-06
+    },
+    {
+      "dataset": "dat.tian2009/OR:infarcts",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 96.60278850247305,
+      "app": 99.99999999936975,
+      "difference": 0.03516680573676952
+    },
+    {
+      "dataset": "dat.tian2009/OR:infarcts",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.736427423508644,
+      "app": 1.737075307119909,
+      "difference": 0.0003731129804180166
+    },
+    {
+      "dataset": "dat.tian2009/OR:infarcts",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.18759213317820542,
+      "app": 0.187509831730585,
+      "difference": 8.23014476204198e-05
+    },
+    {
+      "dataset": "dat.mccurdy2020",
+      "method": "begg",
+      "quantity": "tau",
+      "reference": -0.006809082372186954,
+      "app": -0.006805437056368649,
+      "difference": 3.6453158183055723e-06
+    },
+    {
+      "dataset": "dat.mccurdy2020",
+      "method": "begg",
+      "quantity": "p",
+      "reference": 0.6783399285066687,
+      "app": 0.6785032665740041,
+      "difference": 0.00016333806733537237
+    },
+    {
+      "dataset": "dat.mccurdy2020",
+      "method": "trimfill",
+      "reference": {
+        "unavailable": true,
+        "error": "Independent method attempt exceeded 120 seconds or failed; see bounded/large-trimfill.log"
+      },
+      "app": {
+        "k0": 122,
+        "est": 0.5311608072567502,
+        "se": 0.005882624350326765,
+        "tau2": 0.060429948703487855,
+        "side": "left"
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.mccurdy2020",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 44.9253660958623,
+      "app": 44.92516070234086,
+      "difference": 4.571883087213676e-06
+    },
+    {
+      "dataset": "dat.meeker2017/mean",
+      "method": "selection",
+      "quantity": "se",
+      "reference": null,
+      "app": 0.007626434589620505,
+      "difference": null
+    },
+    {
+      "dataset": "dat.meeker2017/mean",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.7778081624958273,
+      "app": 1.179185125701688e-39,
+      "difference": 0.7778081624958273
+    },
+    {
+      "dataset": "dat.meeker2017/mean",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0,
+      "app": 4.570149266669432e-05,
+      "difference": 4.570149266669432e-05
+    },
+    {
+      "dataset": "dat.meeker2017/mean",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 1,
+      "app": 0.9946061117324551,
+      "difference": 0.005393888267544944
+    },
+    {
+      "dataset": "dat.michael2013",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.029649600207931052,
+      "app": 0.029645735979375178,
+      "difference": 3.864228555874871e-06
+    },
+    {
+      "dataset": "dat.michael2013",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.03088862633247121,
+      "app": 0.03088472074042056,
+      "difference": 3.905592050650053e-06
+    },
+    {
+      "dataset": "dat.michael2013",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.25580150797596535,
+      "app": 0.25573788587989793,
+      "difference": 6.36220960674172e-05
+    },
+    {
+      "dataset": "dat.michael2013",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.4348556312727982,
+      "app": 1.4353031390183801,
+      "difference": 0.0003118834646694894
+    },
+    {
+      "dataset": "dat.michael2013",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.23097362865845403,
+      "app": 0.23090090945154196,
+      "difference": 7.271920691206968e-05
+    },
+    {
+      "dataset": "dat.moore1998/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.8526985542649438,
+      "app": 0.8527057637115899,
+      "difference": 7.2094466461170015e-06
+    },
+    {
+      "dataset": "dat.moore1998/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.2390943186912046,
+      "app": 0.23909141124817349,
+      "difference": 2.9074430311082367e-06
+    },
+    {
+      "dataset": "dat.moore1998/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.4734126738817828,
+      "app": 0.47340970228730545,
+      "difference": 2.971594477374495e-06
+    },
+    {
+      "dataset": "dat.moore1998/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.20577273698367027,
+      "app": 0.20577443498784329,
+      "difference": 1.6980041730174644e-06
+    },
+    {
+      "dataset": "dat.nielweise2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.9485300751487166,
+      "app": -0.9480325267895493,
+      "difference": 0.0004975483591672658
+    },
+    {
+      "dataset": "dat.nielweise2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.2777256812981663,
+      "app": 0.23637119817659966,
+      "difference": 0.04135448312156667
+    },
+    {
+      "dataset": "dat.nielweise2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.0009242491753464987,
+      "app": 2.1834158576242118e-13,
+      "difference": 0.0009242491751281571
+    },
+    {
+      "dataset": "dat.nielweise2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 62.32572138371649,
+      "app": 99.99999999846862,
+      "difference": 0.6044740081355093
+    },
+    {
+      "dataset": "dat.nielweise2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.10877464028033046,
+      "app": 0.11070175330873155,
+      "difference": 0.001927113028401095
+    },
+    {
+      "dataset": "dat.nielweise2007/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.7415435260868336,
+      "app": 0.7393466098161192,
+      "difference": 0.0021969162707143886
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.infarction:cont.infarction",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.3586840448668241,
+      "app": 0.3586983936809749,
+      "difference": 1.4348814150799694e-05
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.infarction:cont.infarction",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.19255466497517104,
+      "app": 0.1925557835812882,
+      "difference": 1.1186061171508666e-06
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.infarction:cont.infarction",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 6.998866447557308e-06,
+      "app": 7.3492379645410145e-28,
+      "difference": 6.998866447557308e-06
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.infarction:cont.infarction",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.20523265450085,
+      "app": 99.99999999888205,
+      "difference": 0.008011344997789705
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.infarction:cont.infarction",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 3.8062339643163483,
+      "app": 3.806752114260803,
+      "difference": 0.00013613192181887213
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.infarction:cont.infarction",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.051062138337251574,
+      "app": 0.051046342831253866,
+      "difference": 1.5795505997708015e-05
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.death:cont.death",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.2389380771471863,
+      "app": 0.23894762670312336,
+      "difference": 9.549555937071741e-06
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.death:cont.death",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 5.289717322461248e-06,
+      "app": 2.3413692231769877e-53,
+      "difference": 5.289717322461248e-06
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.death:cont.death",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 99.23744570352235,
+      "app": 99.99999999979579,
+      "difference": 0.007684138692481174
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.death:cont.death",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.772584773418089,
+      "app": 2.7728963607105612,
+      "difference": 0.0001123815204713296
+    },
+    {
+      "dataset": "dat.nissen2007/OR:treat.death:cont.death",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.09589120366659619,
+      "app": 0.09587254235257325,
+      "difference": 1.8661314022935804e-05
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:beta-blockers:control",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.6864199502254438,
+      "app": -0.6863981571488442,
+      "difference": 2.1793076599552208e-05
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:beta-blockers:control",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.17409630114923647,
+      "app": 0.17406927684647108,
+      "difference": 2.7024302765382702e-05
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:beta-blockers:control",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 3.484696075585144e-05,
+      "app": 9.433031467677634e-14,
+      "difference": 3.484696066152113e-05
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:beta-blockers:control",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.012745529385000566,
+      "app": 0.012743087487741679,
+      "difference": 2.4418972588875765e-06
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:beta-blockers:control",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 5.988636296418914,
+      "app": 5.988952308644777,
+      "difference": 5.276864551813217e-05
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:beta-blockers:control",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.014398329357815846,
+      "app": 0.014395750103928573,
+      "difference": 2.5792538872731335e-06
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:control:sclerotherapy",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.6379973250441032,
+      "app": 0.6380040032779424,
+      "difference": 6.678233839152448e-06
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:control:sclerotherapy",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.4473772886737632,
+      "app": 0.44738106597179733,
+      "difference": 3.7772980341355122e-06
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:control:sclerotherapy",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 1.052554073409913,
+      "app": 1.0525651693816038,
+      "difference": 1.054194931273485e-05
+    },
+    {
+      "dataset": "dat.pagliaro1992/OR:control:sclerotherapy",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.067838194317738,
+      "app": 1.0678608361510635,
+      "difference": 2.1203430862511363e-05
+    },
+    {
+      "dataset": "dat.quan2000/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.2351058636693131,
+      "app": -0.23511234059604416,
+      "difference": 6.4769267310582634e-06
+    },
+    {
+      "dataset": "dat.quan2000/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.15292470387284318,
+      "app": 0.15292717025973696,
+      "difference": 2.4663868937735423e-06
+    },
+    {
+      "dataset": "dat.quan2000/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.2956334341129764e-06,
+      "app": 3.215885197887147e-35,
+      "difference": 2.2956334341129764e-06
+    },
+    {
+      "dataset": "dat.quan2000/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 84.13670587677841,
+      "app": 99.99999997502866,
+      "difference": 0.1885418965829573
+    },
+    {
+      "dataset": "dat.quan2000/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.19969347936842397,
+      "app": 0.20013440139204164,
+      "difference": 0.00044092202361767363
+    },
+    {
+      "dataset": "dat.quan2000/OR:Ee:Ec",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.6549683744628351,
+      "app": 0.6546123829589583,
+      "difference": 0.0003559915038767736
+    },
+    {
+      "dataset": "dat.raudenbush1985",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 0.015807088072731727,
+      "app": 0.015810601213074666,
+      "difference": 3.5131403429387864e-06
+    },
+    {
+      "dataset": "dat.raudenbush1985",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.04005144011296136,
+      "app": 0.040048482463393605,
+      "difference": 2.957649567758569e-06
+    },
+    {
+      "dataset": "dat.raudenbush1985",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.2409587748823546e-06,
+      "app": 1.780817975191481e-15,
+      "difference": 2.2409587731015365e-06
+    },
+    {
+      "dataset": "dat.raudenbush1985",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.17040977526470996,
+      "app": 0.17039834945346066,
+      "difference": 1.1425811249299311e-05
+    },
+    {
+      "dataset": "dat.raudenbush1985",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 3.11427146058629,
+      "app": 3.114985155740131,
+      "difference": 0.00022916921754359174
+    },
+    {
+      "dataset": "dat.raudenbush1985",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.07760917851150076,
+      "app": 0.07757518572541977,
+      "difference": 3.3992786080988546e-05
+    },
+    {
+      "dataset": "dat.rivera2025/OR:TP:FN",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 3.7961481380156026,
+      "app": 3.7959614797892156,
+      "difference": 4.917042739131477e-05
+    },
+    {
+      "dataset": "dat.rivera2025/OR:TP:FN",
+      "method": "selection",
+      "quantity": "se",
+      "reference": null,
+      "app": 0.3021363466816563,
+      "difference": null
+    },
+    {
+      "dataset": "dat.rivera2025/OR:TP:FN",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.9963469716541307,
+      "app": 0.9967407414988056,
+      "difference": 0.0003937698446749849
+    },
+    {
+      "dataset": "dat.rivera2025/OR:TP:FN",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 0.007734592015936483,
+      "app": 3.262131520023209e-12,
+      "difference": 0.007734592012674351
+    },
+    {
+      "dataset": "dat.rivera2025/OR:TP:FN",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.10534108937237363,
+      "app": 0.10623129990152336,
+      "difference": 0.0008902105291497264
+    },
+    {
+      "dataset": "dat.rivera2025/OR:TP:FN",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.745511894270659,
+      "app": 0.7444762320188314,
+      "difference": 0.001035662251827607
+    },
+    {
+      "dataset": "dat.steurer2006/lnHR",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.11941399600645,
+      "app": -0.11941282226540384,
+      "difference": 1.17374104616208e-06
+    },
+    {
+      "dataset": "dat.steurer2006/lnHR",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 96.12927259121832,
+      "app": 99.99999997860725,
+      "difference": 0.040265855374240364
+    },
+    {
+      "dataset": "dat.steurer2006/lnHR",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.046598743542410226,
+      "app": 0.045553317903640256,
+      "difference": 0.00104542563876997
+    },
+    {
+      "dataset": "dat.steurer2006/lnHR",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.8290910924742421,
+      "app": 0.830989841686531,
+      "difference": 0.0018987492122889416
+    },
+    {
+      "dataset": "dat.tannersmith2016",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 1.172032628395834,
+      "app": 1.1720353263771413,
+      "difference": 2.3019677455109467e-06
+    },
+    {
+      "dataset": "dat.tannersmith2016",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 0.2527077581503079,
+      "app": 0.2527088247678648,
+      "difference": 1.0666175569440384e-06
+    },
+    {
+      "dataset": "dat.thompson1999/logOR",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.2069344221150935,
+      "app": 1.206932678924474,
+      "difference": 1.4443126216855972e-06
+    },
+    {
+      "dataset": "dat.thompson1999/OR:ihd.exp:ihd.cont",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 1.203857922553393,
+      "app": 1.2038562202746803,
+      "difference": 1.4140196120866423e-06
+    },
+    {
+      "dataset": "dat.yusuf1985/OR:ai:ci",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": -0.22781563603255964,
+      "app": -0.22781419104887318,
+      "difference": 1.4449836864549592e-06
+    },
+    {
+      "dataset": "dat.yusuf1985/OR:ai:ci",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 0.006764609583392835,
+      "app": 0.006766431681266374,
+      "difference": 1.8220978735385487e-06
+    },
+    {
+      "dataset": "dat.yusuf1985/OR:ai:ci",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 95.86865851633566,
+      "app": 99.99999999608869,
+      "difference": 0.04309376540456199
+    },
+    {
+      "dataset": "dat.yusuf1985/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 2.1232826172045236,
+      "app": 2.124233363053605,
+      "difference": 0.0004477716915204386
+    },
+    {
+      "dataset": "dat.yusuf1985/OR:ai:ci",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.14507531095110945,
+      "app": 0.14498530860853465,
+      "difference": 9.000234257480755e-05
+    },
+    {
+      "dataset": "dat.kearon1998/OR:tp:fp",
+      "method": "selection",
+      "quantity": "mu",
+      "reference": 3.7966274327008893,
+      "app": 3.796511019140065,
+      "difference": 3.066236097379305e-05
+    },
+    {
+      "dataset": "dat.kearon1998/OR:tp:fp",
+      "method": "selection",
+      "quantity": "se",
+      "reference": 0.5477326246807882,
+      "app": 0.25253625681933484,
+      "difference": 0.29519636786145337
+    },
+    {
+      "dataset": "dat.kearon1998/OR:tp:fp",
+      "method": "selection",
+      "quantity": "tau2",
+      "reference": 2.957856565195087,
+      "app": 2.9580784310930044,
+      "difference": 7.500901177151554e-05
+    },
+    {
+      "dataset": "dat.kearon1998/OR:tp:fp",
+      "method": "selection",
+      "quantity": "delta",
+      "reference": 5.033610055594471e-05,
+      "app": 4.815837391470783e-14,
+      "difference": 5.033610050778633e-05
+    },
+    {
+      "dataset": "dat.kearon1998/OR:tp:fp",
+      "method": "selection",
+      "quantity": "LRT",
+      "reference": 9.128982287177962,
+      "app": 9.129795544551541,
+      "difference": 8.908521760651724e-05
+    },
+    {
+      "dataset": "dat.kearon1998/OR:tp:fp",
+      "method": "selection",
+      "quantity": "LRTp",
+      "reference": 0.002515916359869233,
+      "app": 0.0025147982213465925,
+      "difference": 1.118138522640446e-06
+    }
+  ],
+  "refusals": [
+    {
+      "dataset": "dat.anker2025/total.logrr",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": -0.18608682371268512,
+        "se": 0.06800839117332788,
+        "tau2": 0.003079015450361026,
+        "delta": [
+          1,
+          99.99999970843515
+        ],
+        "LRT": 0.03639448046173843,
+        "LRTdf": 1,
+        "LRTp": 0.8487031495299877,
+        "unadjusted": {
+          "mu": -0.18650935720136125,
+          "tau2": 0.003037688574341411
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Fluticasone+Salmeterol:Salmeterol",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": -0.025502710147023426,
+        "se": 0.21394537619028037,
+        "tau2": 0.028761742248109217,
+        "delta": [
+          1,
+          99.99999999550153
+        ],
+        "LRT": 0.4467581997328276,
+        "LRTdf": 1,
+        "LRTp": 0.5038784674747874,
+        "unadjusted": {
+          "mu": -0.09340867716111353,
+          "tau2": 0.00911962896998121
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "egger_lm",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "statistic": 3.2848876977736947,
+        "p": 0.005422919307677673,
+        "name": "Egger (generic)",
+        "applicable": "any effect scale",
+        "b0": 0.9681152620206563,
+        "seB0": 0.29471791765568983,
+        "limit": 0.0501080698828416
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "trimfill",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "error": "Error: Fisher scoring algorithm did not converge."
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "peters",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "statistic": 2.9686100214461444,
+        "p": 0.01087584200515986,
+        "name": "Peters (binary)",
+        "applicable": "log-OR, binary outcomes"
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Placebo:Salmeterol",
+      "method": "harbord",
+      "reference": {
+        "error": "Fisher scoring algorithm did not converge. See 'help(rma)' for possible remedies."
+      },
+      "app": {
+        "statistic": 4.091238236195817,
+        "p": 0.001273888789328999,
+        "name": "Harbord (binary)",
+        "applicable": "log-OR with score-test bias correction"
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.baker2009/OR:Salmeterol:Tiotropium",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep3t:ep3c",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": -0.13939939489494602,
+        "se": 0.08383790230613009,
+        "tau2": 0.006094343142084454,
+        "delta": [
+          1,
+          99.9999998671152
+        ],
+        "LRT": 0.04173747357596014,
+        "LRTdf": 1,
+        "LRTp": 0.838121013791595,
+        "unadjusted": {
+          "mu": -0.14066450500731523,
+          "tau2": 0.005612065008486344
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.cannon2006/OR:ep4t:ep4c",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.056695132529812314,
+        "se": 0.16253357013950628,
+        "tau2": 0.028126290679316886,
+        "delta": [
+          1,
+          99.9999999999809
+        ],
+        "LRT": 0.7190397244106708,
+        "LRTdf": 1,
+        "LRTp": 0.3964590776837542,
+        "unadjusted": {
+          "mu": 0.007383443645229439,
+          "tau2": 0.01448948724836873
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Control/Placebo:Tranexamic acid",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Control/Placebo:rFVIIa",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Control/Placebo:rFVIIa",
+      "method": "peters",
+      "reference": {
+        "error": "meta::metabias returned no statistic or p-value (insufficient informative rows)",
+        "raw": {
+          "statistic": null,
+          "p": null
+        }
+      },
+      "app": {
+        "error": "Error: Insufficient informative rows."
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.gurusamy2011/OR:Control/Placebo:rFVIIa",
+      "method": "harbord",
+      "reference": {
+        "error": "meta::metabias returned no statistic or p-value (insufficient informative rows)",
+        "raw": {
+          "statistic": null,
+          "p": null
+        }
+      },
+      "app": {
+        "error": "Error: Insufficient informative rows."
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.linde2015/OR:remi1:remi3",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.4188436199006356,
+        "se": 0.3438447822166965,
+        "tau2": 1.4233050639537376e-13,
+        "delta": [
+          1,
+          0.06623730713569996
+        ],
+        "LRT": 2.5580324931543097,
+        "LRTdf": 1,
+        "LRTp": 0.10973507518563486,
+        "unadjusted": {
+          "mu": 0.8016023734636432,
+          "tau2": 3.981071705534898e-15
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.linde2016/OR:Face-to-face CBT:Other face-to-face",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.linde2016/OR:NaSSa:SSRI",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.linde2016/OR:Other face-to-face:UC",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.5213950745989349,
+        "se": 0.20932878602114258,
+        "tau2": 9.875755756599702e-15,
+        "delta": [
+          1,
+          2.5133764850506988
+        ],
+        "LRT": 0.3762339299966875,
+        "LRTdf": 1,
+        "LRTp": 0.5396256969347838,
+        "unadjusted": {
+          "mu": 0.43110226329355406,
+          "tau2": 3.9810717055349545e-15
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.linde2016/OR:Remote CBT:UC",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.linde2016/OR:Self-help CBT:UC",
+      "method": "selection",
+      "reference": {
+        "error": "Optimizer (optim) did not achieve convergence (convergence = 1)."
+      },
+      "app": {
+        "mu": 0.33347221891509543,
+        "se": 0.2462907537421703,
+        "tau2": 2.2424240074934012e-14,
+        "delta": [
+          1,
+          0.2121484396165436
+        ],
+        "LRT": 0.8523925795400686,
+        "LRTdf": 1,
+        "LRTp": 0.3558763686459371,
+        "unadjusted": {
+          "mu": 0.512941042111115,
+          "tau2": 3.981071705534926e-15
+        }
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.linde2016/OR:TCA:rMAO-A",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    },
+    {
+      "dataset": "dat.mccurdy2020",
+      "method": "trimfill",
+      "reference": {
+        "unavailable": true,
+        "error": "Independent method attempt exceeded 120 seconds or failed; see bounded/large-trimfill.log"
+      },
+      "app": {
+        "k0": 122,
+        "est": 0.5311608072567502,
+        "se": 0.005882624350326765,
+        "tau2": 0.060429948703487855,
+        "side": "left"
+      },
+      "pass_check": false
+    },
+    {
+      "dataset": "dat.woods2010/OR:Placebo:Salmeterol",
+      "method": "selection",
+      "reference": {
+        "error": "k < 4"
+      },
+      "app": {
+        "error": "k < 4"
+      },
+      "pass_check": true
+    }
+  ],
+  "checks": 2950,
+  "passing": 2335
+}

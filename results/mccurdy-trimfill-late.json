@@ -1,0 +1,27 @@
+{
+  "note": "McCurdy trim-and-fill R reference that finished AFTER the protocol's 120-second limit. Not counted: under the protocol this check fails (Table 2).",
+  "dataset": "dat.mccurdy2020",
+  "method": "trimfill (metafor 5.2-1, REML, L0)",
+  "script_written": "2026-10-10T13:23:52",
+  "result_written": "2026-10-10T13:32:31",
+  "elapsed_seconds_upper_bound": 519,
+  "R_value": {
+    "k0": 122,
+    "side": "left",
+    "est": 0.5311608072567497,
+    "se": 0.00588262435032676,
+    "tau2": 0.060429948703487786
+  },
+  "app_value": {
+    "k0": 122,
+    "est": 0.5311608072567502,
+    "se": 0.005882624350326765,
+    "tau2": 0.060429948703487855,
+    "side": "left"
+  },
+  "relative_difference": {
+    "est": 4.440892098500626e-16,
+    "se": 5.204170427930421e-18,
+    "tau2": 6.938893903907228e-17
+  }
+}

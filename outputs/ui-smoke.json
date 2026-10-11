@@ -1,0 +1,26 @@
+[
+  {
+    "name": "experimental selection warning visible",
+    "pass": true
+  },
+  {
+    "name": "Egger t with compatibility alias",
+    "pass": true
+  },
+  {
+    "name": "k=3 UI contract",
+    "pass": true
+  },
+  {
+    "name": "k=5 UI contract",
+    "pass": true
+  },
+  {
+    "name": "REML refusal clears previous export",
+    "pass": true
+  },
+  {
+    "name": "REML refusal shown to user",
+    "pass": true
+  }
+]

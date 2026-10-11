@@ -1,0 +1,25 @@
+{
+  "title": "Small-study effects and publication bias tests in the browser: a tool validated against the R packages metafor and meta",
+  "creators": [
+    {
+      "name": "Ahmad, Mahmood"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mahmood726-cyber/allmeta",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23288388",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    }
+  ],
+  "description": "Validation archive at allmeta commit 3dcc679. Five methods: 2,107/2,113 checks pass. Selection is experimental, not validated. See README for coverage and exceptions."
+}
