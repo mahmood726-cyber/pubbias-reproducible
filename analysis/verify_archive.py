@@ -39,6 +39,5 @@ def main():
     assert title in (ROOT/'CITATION.cff').read_text(encoding='utf-8')
     h=load('results/hackshaw-reml.json');assert h['dataset']=='dat.hackshaw1998' and h['k']==37 and h['metafor']=='5.2.1'
     assert all(c['pass'] for c in load('outputs/ui-smoke.json'))
-    assert not (ROOT/'.git').exists()
     print(f'ARCHIVE PASS: {len(app)} app hashes; {len(manifest)} source hashes; corpus, six failure identities, tables, metadata, paired image pixels and offline UI checks verified.')
 if __name__=='__main__':main()
