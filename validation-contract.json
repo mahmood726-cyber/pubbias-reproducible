@@ -2363,5 +2363,22 @@
       "tolerance": 0,
       "passed": false
     }
-  ]
+  ],
+  "archive": {
+    "version": "app-merged-3dcc679 / paper-ledger-2113",
+    "files": {
+      "data/corpus.json": {
+        "sha256": "3677a36cb140cbd9eb844a7243c5af210d54173f73426368fcf3499ffee6345c",
+        "md5": "b7a39388530d489f01810e3ad453504b"
+      },
+      "results/app-merged-3dcc679.json": {
+        "sha256": "ff579561f14ddd36e7bbfa08299440f45ac3e95941131b77044109f6a84577c8",
+        "md5": "d17efe63671e61a57902c0fea53c4f3f"
+      },
+      "outputs/check_ledger.json": {
+        "sha256": "55351240a391325bee272710d7068e1e6ebe04c22174d1bf005365cd9d157e98",
+        "md5": "ee071904d592366437a12cb8fde01526"
+      }
+    }
+  }
 }

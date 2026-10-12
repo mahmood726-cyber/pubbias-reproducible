@@ -18,6 +18,15 @@ def main():
     for n in ['corpus.json','dataset-disposition.json']:assert (ROOT/'data'/n).read_bytes()==(ROOT/'results'/n).read_bytes()
     refs=load('results/reference.json')['datasets'];corpus=load('data/corpus.json');disposition=load('data/dataset-disposition.json')
     contract=load('validation-contract.json')
+    assert contract['archive']['version']=='app-merged-3dcc679 / paper-ledger-2113'
+    assert set(contract['archive']['files'])=={'data/corpus.json','results/app-merged-3dcc679.json','outputs/check_ledger.json'}
+    for name,hashes in contract['archive']['files'].items():
+        for algorithm,want in hashes.items():
+            assert hashlib.new(algorithm,(ROOT/name).read_bytes()).hexdigest()==want,(name,algorithm)
+    validator=(ROOT/'validate.R').read_text(encoding='utf-8')
+    for algorithm in ['sha256','md5']:
+        pin=hashlib.new(algorithm,(ROOT/'validation-contract.json').read_bytes()).hexdigest()
+        assert f"{algorithm}='{pin}'" in validator,algorithm
     checks=[r for r in load('outputs/check_ledger.json') if r['method'] in ['egger_lm','begg','trimfill','peters','harbord']]
     assert contract['configurations']==[d['id'] for d in corpus]
     assert contract['checks']==[' | '.join([r['dataset'],r['method'],r['quantity']]) for r in checks]

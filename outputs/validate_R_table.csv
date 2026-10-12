@@ -1739,7 +1739,7 @@
 "dat.mccurdy2020","Egger","limit","0.27395921190644973","0.2739592119064494",3.33066907387547e-16,1e-09,"PASS",FALSE
 "dat.mccurdy2020","Begg","tau","-0.0068054370563686486","-0.0068090823721869542",3.64531581830557e-06,1e-09,"FAIL",TRUE
 "dat.mccurdy2020","Begg","p","0.67850326657400406","0.67833992850666869",0.000163338067335372,1e-09,"FAIL",TRUE
-"dat.mccurdy2020","Trim-and-fill","refusal","{""k0"":122,""est"":0.53116080725675019,""se"":0.0058826243503267654,""tau2"":0.060429948703487855,""side"":""left""}","{""unavailable"":true,""error"":""Independent method attempt exceeded 120 seconds""}",1,0,"FAIL",TRUE
+"dat.mccurdy2020","Trim-and-fill","refusal","{""k0"":122,""est"":0.53116080725675019,""se"":0.0058826243503267654,""tau2"":0.060429948703487855,""side"":""left""}","{""unavailable"":true,""error"":""Independent method attempt timeout"",""workerStatus"":""timeout"",""exitStatus"":124,""stage"":""method-computation""}",1,0,"FAIL",TRUE
 "dat.meeker2017/mean","Egger","statistic","0.37182967179250215","0.37182967179247561",2.65343302885412e-14,1e-09,"PASS",FALSE
 "dat.meeker2017/mean","Egger","p","0.71967543566596648","0.71967543566597436",7.88258347483861e-15,1e-09,"PASS",FALSE
 "dat.meeker2017/mean","Egger","b0","0.14431662079324792","0.1443166207932377",1.02140518265514e-14,1e-09,"PASS",FALSE
