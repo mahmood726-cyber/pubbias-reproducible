@@ -101,9 +101,13 @@ corpus<-readj(file.path(root,'data/corpus.json'))
 app<-readj(file.path(root,'results/app-merged-3dcc679.json'))
 expected<-read.csv(file.path(root,'outputs/table2_failed_checks.csv'),check.names=FALSE,stringsAsFactors=FALSE)
 identity<-function(id,method,q)paste(id,method,q,sep=' | ')
+contract<-readj(file.path(root,'validation-contract.json'))
 known<-with(expected,identity(dataset_configuration,method,quantity))
+expected_checks<-unlist(contract$checks)
+stopifnot(length(expected_checks)==2113L,!anyDuplicated(expected_checks))
 ids<-vapply(corpus,function(d)d$id,'')
 stopifnot(length(ids)==152L, !anyDuplicated(ids),setequal(ids,names(app)),length(known)==6L,!anyDuplicated(known))
+stopifnot(setequal(ids,unlist(contract$configurations)))
 cat('Actual versions:',R.version.string,'\n')
 for(p in c('metafor','meta','jsonlite','metadat'))if(requireNamespace(p,quietly=TRUE))cat(p,as.character(packageVersion(p)),'\n')
 cat('Paper: metafor 5.2-1; meta 8.5-0; metadat 1.6-0. Selection excluded.\n')
@@ -114,13 +118,35 @@ scalar<-function(x)length(x)==1 && is.numeric(x) && is.finite(x)
 # Original reference-one.R serializes scalar NA/NaN/Inf as JSON null before
 # compare.py turns a missing binary statistic AND p into a matched refusal.
 missing_number<-function(x)is.null(x) || (length(x)==1 && is.numeric(x) && !is.finite(x))
+tol_for<-function(method,q)if(method=='trimfill' && q %in% c('est','se','tau2'))1e-6 else if(q=='side')0 else 1e-9
+close_value<-function(x,y,method,q) {
+  if(q=='side')return(is.character(x)&&identical(x,y))
+  scalar(x)&&scalar(y)&&abs(x-y)/(if(q=='p')1 else max(1,abs(y)))<=tol_for(method,q)
+}
+valid_app<-function(av,method) {
+  if(!is.list(av)||!length(av))return(FALSE)
+  if('error' %in% names(av))return(is.character(av$error)&&length(av$error)==1L&&nzchar(av$error))
+  all(vapply(fields[[method]],function(q)if(q=='side')is.character(av[[q]])&&length(av[[q]])==1L&&av[[q]] %in% c('left','right') else scalar(av[[q]]),TRUE))
+}
+documented<-function(id,method,q,av,rv) {
+  hit<-Filter(function(e)identical(e$dataset,id)&&identical(e$method,method)&&identical(e$quantity,q),contract$exceptions)
+  if(length(hit)!=1L)return(FALSE)
+  e<-hit[[1]]
+  if(q!='refusal')return(close_value(av,e$app,method,q)&&close_value(rv,e$reference,method,q))
+  if(!is.null(av$error)||!all(vapply(fields[[method]],function(f)close_value(av[[f]],e$app[[f]],method,f),TRUE)))return(FALSE)
+  if(isTRUE(e$reference$unavailable))return(isTRUE(rv$unavailable)&&is.character(rv$error)&&grepl('Independent method attempt|elapsed time limit',rv$error))
+  identical(rv$error,e$reference$error)&&!isTRUE(rv$unavailable)
+}
 showvalue<-js
 record<-function(id,method,q,av,rv,diff,tol,pass) {
   n<<-n+1L
   key<-identity(id,labels[[method]],q)
+  # Frozen exception identities always remain FAIL; a changed signature cannot
+  # escape evidence checking by becoming a numerical match or matched refusal.
+  if(any(vapply(contract$exceptions,function(e)identical(e$dataset,id)&&identical(e$method,method)&&identical(e$quantity,q),TRUE)))pass<-FALSE
   ledger[[n]]<<-data.frame(dataset_configuration=id,method=labels[[method]],quantity=q,
     App=showvalue(av),R=showvalue(rv),Difference=diff,Tolerance=tol,
-    Verdict=if(pass)'PASS' else 'FAIL',Known_exception=key %in% known,stringsAsFactors=FALSE)
+    Verdict=if(pass)'PASS' else 'FAIL',Known_exception=!pass&&documented(id,method,q,av,rv),stringsAsFactors=FALSE)
 }
 worker<-function(d,methods,tag) {
   input<-file.path(scratch,paste0(tag,'-input.json')); output<-file.path(scratch,paste0(tag,'-result.json'))
@@ -136,8 +162,10 @@ worker<-function(d,methods,tag) {
 }
 for(i in seq_along(corpus)) {
   d<-corpus[[i]]
-  stopifnot(length(d$yi)==d$k,length(d$vi)==d$k,all(is.finite(unlist(d$yi))),all(is.finite(unlist(d$vi))),all(unlist(d$vi)>0))
+  stopifnot(scalar(d$k),d$k>0,d$k==as.integer(d$k),length(d$yi)==d$k,length(d$vi)==d$k,all(vapply(d$yi,scalar,TRUE)),all(vapply(d$vi,scalar,TRUE)),all(unlist(d$vi)>0))
   methods<-c('egger_lm','begg',if(!is.null(d$binary))c('peters','harbord'),'trimfill')
+  for(method in methods)if(!valid_app(app[[d$id]][[appkeys[[method]]]],method))stop('Missing or invalid app method record: ',d$id,'/',method)
+  if(!is.null(d$binary))stopifnot(length(d$binary)==d$k,all(vapply(d$binary,function(b)all(vapply(c('e1','n1','e2','n2'),function(q)scalar(b[[q]]),TRUE))&&b$n1>0&&b$n2>0&&b$e1>=0&&b$e2>=0&&b$e1<=b$n1&&b$e2<=b$n2,TRUE)))
   ref<-list()
   for(method in methods) {
     if(d$id=='dat.mccurdy2020' && method=='trimfill') {
@@ -154,7 +182,6 @@ for(i in seq_along(corpus)) {
   for(method in names(fields)) {
     if(!method %in% methods)next
     rv<-ref[[method]];av<-app[[d$id]][[appkeys[[method]]]]
-    if(is.null(av))av<-list(error='null result')
     if(method %in% c('peters','harbord') && is.null(rv$error) && missing_number(rv$statistic) && missing_number(rv$p))rv<-list(error='meta::metabias returned no statistic or p-value (insufficient informative rows)')
     if(!is.null(rv$error) || !is.null(av$error)) {
       pass<-!is.null(rv$error)&&!is.null(av$error)&&!isTRUE(rv$unavailable)&&!isTRUE(av$unavailable)
@@ -180,8 +207,11 @@ failed<-table[table$Verdict=='FAIL',]
 cat('Failed checks (documented exceptions remain FAIL):\n')
 for(i in seq_len(nrow(failed)))cat(identity(failed$dataset_configuration[i],failed$method[i],failed$quantity[i]),if(failed$Known_exception[i])' [documented]' else ' [UNEXPECTED]','\n',sep='')
 cat('Historical paper: 2107/2113; a timeout may change with hardware. No archived R result is substituted.\n')
+actual_checks<-identity(table$dataset_configuration,names(labels)[match(table$method,labels)],table$quantity)
+coverage<-nrow(table)==2113L&&!anyDuplicated(actual_checks)&&setequal(actual_checks,expected_checks)
+cat('Frozen coverage:',if(coverage)'PASS' else 'FAIL','\n')
 unexpected<-sum(!failed$Known_exception)
 cat('Unexpected failures:',unexpected,'\n')
 cat(sprintf('%d/%d checks pass\n',sum(table$Verdict=='PASS'),nrow(table)))
 on.exit_cleanup()
-quit(status=if(unexpected>0)1 else 0)
+quit(status=if(unexpected>0 || !coverage)1 else 0)

@@ -17,6 +17,12 @@ def main():
         if name.startswith('../') and Path(name).suffix in ['.js','.css']:assert (page.parent/name).is_file(),name
     for n in ['corpus.json','dataset-disposition.json']:assert (ROOT/'data'/n).read_bytes()==(ROOT/'results'/n).read_bytes()
     refs=load('results/reference.json')['datasets'];corpus=load('data/corpus.json');disposition=load('data/dataset-disposition.json')
+    contract=load('validation-contract.json')
+    checks=[r for r in load('outputs/check_ledger.json') if r['method'] in ['egger_lm','begg','trimfill','peters','harbord']]
+    assert contract['configurations']==[d['id'] for d in corpus]
+    assert contract['checks']==[' | '.join([r['dataset'],r['method'],r['quantity']]) for r in checks]
+    assert len(set(contract['checks']))==len(checks)==2113
+    assert contract['exceptions']==[r for r in checks if not r['passed']]
     assert len({d['id'] for d in corpus})==len(corpus)
     for d in corpus:
         assert d['id'] in refs and d['id'].split('/')[0] in disposition

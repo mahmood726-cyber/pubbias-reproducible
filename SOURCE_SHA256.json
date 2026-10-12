@@ -29,5 +29,7 @@
   "bench/original/supplement.R": "a7a8c0bd780b10726117a488b5cd56c15d526ebb2a26e01ea8aead45ea73a129",
   "bench/original/targeted-diagnostics.py": "78bbe2cb0e53288b7ba54bee4e5aeb995ca3a84814e57fe517a4b53d6737990e",
   "bench/original/targeted-diagnostics.R": "a011b6422d0fff89c8346ce3d5c129f10c04805f301c33428f09813ae0cbceb0",
-  "validate.R": "d034462df80b3cc9afa3bf22638d97adf16a1da684b55323c3978644d8d06028"
+  "validate.R": "93bf4395c37a39423bb51615c42c494b13442d7a9a3e173fc53f875de80d6c02",
+  "validation-contract.json": "03c99d3c70daa9e00d81e81a64b068e21e6020364cb65cff6138dd2d4d1ae531",
+  "analysis/verify_archive.py": "22981ce2543092954b79258374ab5d160b0ac012989c22e038c3588f81154f95"
 }
