@@ -28,5 +28,6 @@
   "bench/original/run-app.cjs": "77e26a5ee99ac1b8879e0210291e259e2aa9559f3a4195d2de1366b52cba6f04",
   "bench/original/supplement.R": "a7a8c0bd780b10726117a488b5cd56c15d526ebb2a26e01ea8aead45ea73a129",
   "bench/original/targeted-diagnostics.py": "78bbe2cb0e53288b7ba54bee4e5aeb995ca3a84814e57fe517a4b53d6737990e",
-  "bench/original/targeted-diagnostics.R": "a011b6422d0fff89c8346ce3d5c129f10c04805f301c33428f09813ae0cbceb0"
+  "bench/original/targeted-diagnostics.R": "a011b6422d0fff89c8346ce3d5c129f10c04805f301c33428f09813ae0cbceb0",
+  "validate.R": "d034462df80b3cc9afa3bf22638d97adf16a1da684b55323c3978644d8d06028"
 }

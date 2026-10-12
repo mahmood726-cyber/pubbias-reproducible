@@ -4,6 +4,42 @@ Version 1.0.0 · Mahmood Ahmad · MIT (bundled third-party assets retain their n
 
 This is a local, reproducible validation archive of the allmeta publication-bias page at **3dcc679**. R reference: **R 4.6.0, metafor 5.2-1, meta 8.5-0, metadat 1.6-0** (R serializes package versions with dots). Five methods contribute **2,107 passing checks of 2,113**: Egger, Begg, trim-and-fill, Peters and Harbord. Selection is **experimental, not validated** and excluded from these totals. Thompson–Sharp was not compared.
 
+## Validate with one command
+
+From the archive root, with R and the installed packages `metafor` and `meta`:
+
+```text
+Rscript validate.R
+```
+
+No Python, browser, download or package installation is needed. `jsonlite` is used
+if installed; otherwise the script uses a strict base-R JSON reader. `metadat` is
+not required because all source inputs are frozen in `data/corpus.json`. Set
+`R_LIBS_USER` externally if your packages live in a separate library.
+
+This recalculates all five validated methods exactly as `bench/original/reference-one.R`
+does, excluding experimental selection and Egger's unvalidated rma variant. It
+compares fresh R results with `results/app-merged-3dcc679.json`, prints a per-quantity
+summary and the six exception identities, and writes the full App/R/Difference/
+Tolerance/PASS-or-FAIL ledger to `outputs/validate_R_table.csv`. Documented
+exceptions remain FAIL; exit status is nonzero for unexpected failures or a
+structural/dependency error. Package and R versions are printed, not assumed.
+
+Ordinary methods reuse the loaded R packages with a 120-second elapsed-time guard
+checked at R interrupt points. McCurdy trim-and-fill runs in a child R process
+with an independent 120-second OS timeout, as in the original bounded protocol. Missing output is
+unavailable, never a successful refusal. The historical result is
+`2107/2113 checks pass`; a faster machine or different R packages can change
+availability and thus the recomputed total. Fresh results are never replaced with
+stored R answers to force this count. The CSV is regenerated on each invocation.
+
+| Item | Static or dynamic | Source |
+|---|---|---|
+| Inputs and archived app values | Static measurements | data/corpus.json; results/app-merged-3dcc679.json |
+| Method definitions, tolerances, 120-second cap | Static protocol | Original reference worker and comparator |
+| Expected exception identities | Static evidence | outputs/table2_failed_checks.csv |
+| R fits, differences, counts and verdicts | Dynamic | Current installed R execution |
+
 ## Rebuild the paper outputs
 
 With Python, matplotlib and Pillow already available, run from this directory:
