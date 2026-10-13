@@ -82,3 +82,12 @@ The separate Hackshaw R run yields the unadjusted REML OR and CI in `results/hac
 | Layout, labels, figure floor and colours | Static presentation | Template-derived; no fabricated research values |
 
 No Git repository was initialized, and no push, deployment or certification is claimed. DOI 10.5281/zenodo.23288388 identifies allmeta v1.2.1 as supplied, not this archive; it was not checked online under the offline constraint.
+
+## Validate in R inside the app
+
+From allmeta commit 3487787 (PR #106), the publication-bias page has a one-click **Validate in R** panel: it runs
+Egger, Begg, trim-and-fill and, for 2x2 data, Peters and Harbord in a self-hosted webR on the current data, and it
+replays this archive's 152 configurations (2,113 checks) through the page's own code against the hash-pinned R
+reference. On the final page the replay gives 2,107/2,113 with the same six documented exceptions as this archive. The
+files in app/ remain the validated snapshot (3dcc679); the later commit only adds the panel and exposes the page's
+existing functions to it.
